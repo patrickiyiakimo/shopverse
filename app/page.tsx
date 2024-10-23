@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 
 export default function Home() {
  
-  
+
   return (
     <main>
       <div>
@@ -13,7 +13,6 @@ export default function Home() {
       <div>
         <Hero />
       </div>
-      
     </main>
   );
 }
