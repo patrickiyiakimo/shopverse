@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function Hero() {
   return (
-    <div>
-      <section className="bg-white bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] py-32 dark:bg-gray-900 dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+    <div className="">
+      <section className="py-26 flex min-h-screen items-center justify-center bg-white bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-gray-900 dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
         <div className="relative z-10 mx-auto max-w-screen-xl px-4 py-8 text-center lg:py-16">
           <a
             href="#"
