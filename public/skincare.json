@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "name": "Hydrating Glow Serum",
+    "description": "A lightweight, fast-absorbing serum that boosts your skin's natural glow and hydration levels.",
+    "image": "/images/body-lotion-dreamtime-11.webp",
+    "price": 29.99
+  },
+  {
+    "id": 2,
+    "name": "Soothing Aloe Vera Gel",
+    "description": "A cooling and soothing gel made from pure aloe vera, perfect for calming irritated skin.",
+    "image": "/images/bottles-lotion-dreamtime-5.webp",
+    "price": 15.99
+  },
+  {
+    "id": 3,
+    "name": "Revitalizing Night Cream",
+    "description": "An intensive overnight cream that revitalizes your skin while you sleep, leaving it soft and smooth.",
+    "image": "/images/cosmetic-products-dreamtime-4.webp",
+    "price": 45.0
+  },
+  {
+    "id": 4,
+    "name": "Purifying Charcoal Mask",
+    "description": "A deep-cleansing charcoal mask that removes impurities and unclogs pores for a clearer complexion.",
+    "image": "/images/dreamtime-skincare-1.webp",
+    "price": 22.5
+  },
+  {
+    "id": 5,
+    "name": "Vitamin C Brightening Cream",
+    "description": "A brightening cream enriched with Vitamin C to enhance skin radiance and reduce dark spots.",
+    "image": "/images/lavender-scented-dreamtime-12.webp",
+    "price": 35.75
+  },
+  {
+    "id": 6,
+    "name": "Gentle Exfoliating Scrub",
+    "description": "A gentle exfoliating scrub that removes dead skin cells, revealing smooth and radiant skin.",
+    "image": "/images/lotion-cream-dreamtime-10.webp",
+    "price": 18.0
+  },
+  {
+    "id": 7,
+    "name": "Deep Moisture Body Lotion",
+    "description": "A rich body lotion that provides deep hydration and leaves your skin feeling soft and smooth.",
+    "image": "/images/skincare-dreamtime-2.webp",
+    "price": 12.99
+  },
+  {
+    "id": 8,
+    "name": "Antioxidant Facial Mist",
+    "description": "A refreshing facial mist enriched with antioxidants to hydrate and revitalize your skin.",
+    "image": "/images/sun-lotion-dreamtime-9.webp",
+    "price": 14.99
+  },
+  {
+    "id": 9,
+    "name": "Nourishing Hand Cream",
+    "description": "A nourishing hand cream that hydrates and protects your hands from dryness and environmental stress.",
+    "image": "/images/sunblock-lotion-dreamtime-14.webp",
+    "price": 10.5
+  },
+  {
+    "id": 10,
+    "name": "SPF 50 Sunscreen Lotion",
+    "description": "A broad-spectrum SPF 50 sunscreen lotion that provides long-lasting protection against UVA and UVB rays.",
+    "image": "/images/tanning-lotion-dreamtime-6.webp",
+    "price": 19.99
+  },
+  {
+    "id": 11,
+    "name": "Hyaluronic Acid Serum",
+    "description": "A hydrating serum with hyaluronic acid that plumps up the skin and reduces fine lines.",
+    "image": "/images/white-lotion-bottle-dreamtime-7.webp",
+    "price": 32.0
+  },
+  {
+    "id": 12,
+    "name": "Rejuvenating Eye Cream",
+    "description": "A rejuvenating eye cream that reduces puffiness, dark circles, and fine lines around the eyes.",
+    "image": "/images/white-lotion-bottle-dreamtime-8.webp",
+    "price": 38.5
+  },
+  {
+    "id": 13,
+    "name": "Clarifying Clay Mask",
+    "description": "A clarifying clay mask that absorbs excess oil and detoxifies the skin, leaving it smooth and clear.",
+    "image": "/images/woolworths-dreamtime-13.webp",
+    "price": 20.0
+  },
+  {
+    "id": 14,
+    "name": "Rose Water Toner",
+    "description": "A soothing rose water toner that balances the skin's pH and prepares it for better absorption of skincare products.",
+    "image": "/images/body-lotion-dreamtime-11.webp",
+    "price": 14.75
+  },
+  {
+    "id": 15,
+    "name": "Brightening Face Oil",
+    "description": "A lightweight face oil that brightens the skin and improves its texture with regular use.",
+    "image": "/images/sunblock-lotion-dreamtime-14.webp",
+    "price": 27.99
+  },
+  {
+    "id": 16,
+    "name": "Collagen Boosting Cream",
+    "description": "A rich cream that boosts collagen production and improves skin elasticity, reducing the appearance of wrinkles.",
+    "image": "/images/tanning-lotion-dreamtime-6.webp",
+    "price": 40.0
+  },
+  {
+    "id": 17,
+    "name": "Cleansing Foam Wash",
+    "description": "A gentle foam wash that effectively cleanses the skin without stripping it of natural oils.",
+    "image": "/images/skincare-six.png",
+    "price": 15.5
+  },
+  {
+    "id": 18,
+    "name": "Anti-Aging Retinol Cream",
+    "description": "A potent retinol cream that fights signs of aging and promotes a youthful complexion.",
+    "image": "/images/white-lotion-bottle-dreamtime-7.webp",
+    "price": 50.0
+  },
+  {
+    "id": 19,
+    "name": "Calming Chamomile Mask",
+    "description": "A calming chamomile mask that soothes irritated skin and reduces redness.",
+    "image": "/images/white-lotion-bottle-dreamtime-8.webp",
+    "price": 22.0
+  },
+  {
+    "id": 20,
+    "name": "Deep Cleansing Oil",
+    "description": "A deep cleansing oil that removes makeup and impurities, leaving the skin soft and hydrated.",
+    "image": "/images/woolworths-dreamtime-13.webp",
+    "price": 28.5
+  },
+  {
+    "id": 21,
+    "name": "Smoothing Face Scrub",
+    "description": "A smoothing face scrub that exfoliates dead skin cells, revealing a fresh and glowing complexion.",
+    "image": "/images/body-lotion-dreamtime-11.webp",
+    "price": 17.99
+  },
+  {
+    "id": 22,
+    "name": "Ultra-Hydrating Day Cream",
+    "description": "An ultra-hydrating day cream that keeps your skin moisturized throughout the day.",
+    "image": "/images/bottles-lotion-dreamtime-5.webp",
+    "price": 35.0
+  },
+  {
+    "id": 23,
+    "name": "Anti-Pollution Face Mist",
+    "description": "A protective face mist that shields your skin from environmental pollutants and keeps it fresh.",
+    "image": "/images/cosmetic-products-dreamtime-4.webp",
+    "price": 18.75
+  },
+  {
+    "id": 24,
+    "name": "Brightening Vitamin C Serum",
+    "description": "A concentrated serum with Vitamin C that brightens the skin and fades dark spots.",
+    "image": "/images/skincare-six.png",
+    "price": 42.0
+  },
+  {
+    "id": 25,
+    "name": "Nourishing Night Balm",
+    "description": "A nourishing night balm that deeply hydrates and repairs your skin while you sleep.",
+    "image": "/images/dreamtime-skincare-1.webp",
+    "price": 45.0
+  },
+  {
+    "id": 26,
+    "name": "Purifying Cleansing Balm",
+    "description": "A purifying cleansing balm that melts away makeup and impurities, leaving your skin clean and soft.",
+    "image": "/images/lavender-scented-dreamtime-12.webp",
+    "price": 25.5
+  },
+  {
+    "id": 27,
+    "name": "Hydration Boosting Toner",
+    "description": "A hydrating toner that preps your skin for better absorption of serums and moisturizers.",
+    "image": "/images/lotion-cream-dreamtime-10.webp",
+    "price": 15.75
+  },
+  {
+    "id": 28,
+    "name": "Gentle Makeup Remover",
+    "description": "A gentle makeup remover that effectively cleanses without irritating the skin.",
+    "image": "/images/skincare-dreamtime-2.webp",
+    "price": 20.0
+  },
+  {
+    "id": 29,
+    "name": "Cooling Cucumber Mask",
+    "description": "A cooling cucumber mask that soothes and refreshes tired skin.",
+    "image": "/images/sun-lotion-dreamtime-9.webp",
+    "price": 16.5
+  },
+  {
+    "id": 30,
+    "name": "Nourishing Facial Oil",
+    "description": "A nourishing facial oil that deeply hydrates and repairs dry, damaged skin.",
+    "image": "/images/sunblock-lotion-dreamtime-14.webp",
+    "price": 30.0
+  },
+  {
+    "id": 31,
+    "name": "Balancing Green Tea Serum",
+    "description": "A balancing serum with green tea extract that calms and clarifies the skin.",
+    "image": "/images/tanning-lotion-dreamtime-6.webp",
+    "price": 24.0
+  },
+  {
+    "id": 32,
+    "name": "Firming Eye Serum",
+    "description": "A firming eye serum that tightens and lifts the delicate skin around the eyes.",
+    "image": "/images/white-lotion-bottle-dreamtime-7.webp",
+    "price": 36.0
+  },
+  {
+    "id": 33,
+    "name": "Renewal Face Cream",
+    "description": "A renewal face cream that improves skin texture and tone for a radiant complexion.",
+    "image": "/images/white-lotion-bottle-dreamtime-8.webp",
+    "price": 50.0
+  },
+  {
+    "id": 34,
+    "name": "Antioxidant Day Cream",
+    "description": "An antioxidant-rich day cream that protects and nourishes your skin throughout the day.",
+    "image": "/images/woolworths-dreamtime-13.webp",
+    "price": 33.5
+  },
+  {
+    "id": 35,
+    "name": "Calming Lavender Mask",
+    "description": "A calming mask infused with lavender to soothe and relax your skin.",
+    "image": "/images/body-lotion-dreamtime-11.webp",
+    "price": 22.99
+  },
+  {
+    "id": 36,
+    "name": "Ultra-Light Hydrating Gel",
+    "description": "An ultra-light gel moisturizer that provides long-lasting hydration without clogging pores.",
+    "image": "/images/bottles-lotion-dreamtime-5.webp",
+    "price": 29.0
+  },
+  {
+    "id": 37,
+    "name": "Revitalizing Face Mist",
+    "description": "A revitalizing face mist that refreshes and hydrates your skin throughout the day.",
+    "image": "/images/cosmetic-products-dreamtime-4.webp",
+    "price": 18.75
+  },
+  {
+    "id": 38,
+    "name": "Vitamin E Enriched Cream",
+    "description": "A rich cream infused with Vitamin E to nourish and protect your skin.",
+    "image": "/images/lavender-scented-dreamtime-12.webp",
+    "price": 25.0
+  },
+  {
+    "id": 39,
+    "name": "Detoxifying Charcoal Scrub",
+    "description": "A detoxifying charcoal scrub that removes dead skin cells and deeply cleanses pores.",
+    "image": "/images/lotion-cream-dreamtime-10.webp",
+    "price": 22.0
+  },
+  {
+    "id": 40,
+    "name": "Soothing Rosehip Oil",
+    "description": "A soothing rosehip oil that nourishes and repairs your skin, leaving it soft and glowing.",
+    "image": "/images/skincare-dreamtime-2.webp",
+    "price": 35.5
+  },
+  {
+    "id": 41,
+    "name": "Clarifying Facial Toner",
+    "description": "A clarifying toner that balances your skin and reduces the appearance of pores.",
+    "image": "/images/sun-lotion-dreamtime-9.webp",
+    "price": 16.5
+  },
+  {
+    "id": 42,
+    "name": "Hydrating Body Butter",
+    "description": "A rich body butter that deeply hydrates and nourishes dry skin.",
+    "image": "/images/sunblock-lotion-dreamtime-14.webp",
+    "price": 20.75
+  },
+  {
+    "id": 43,
+    "name": "SPF 30 Tinted Moisturizer",
+    "description": "A lightweight tinted moisturizer with SPF 30 that evens out skin tone and protects against sun damage.",
+    "image": "/images/tanning-lotion-dreamtime-6.webp",
+    "price": 28.0
+  },
+  {
+    "id": 44,
+    "name": "Smoothing Face Serum",
+    "description": "A smoothing face serum that refines skin texture and boosts hydration.",
+    "image": "/images/skincare-six.png",
+    "price": 26.0
+  },
+  {
+    "id": 45,
+    "name": "Nourishing Lip Balm",
+    "description": "A nourishing lip balm that keeps your lips soft and hydrated all day long.",
+    "image": "/images/white-lotion-bottle-dreamtime-7.webp",
+    "price": 8.5
+  },
+  {
+    "id": 46,
+    "name": "Anti-Aging Neck Cream",
+    "description": "An anti-aging neck cream that firms and smooths the delicate skin on your neck.",
+    "image": "/images/skincare-six.png",
+    "price": 39.0
+  },
+  {
+    "id": 47,
+    "name": "Brightening Peptide Serum",
+    "description": "A brightening peptide serum that reduces the appearance of dark spots and evens out skin tone.",
+    "image": "/images/white-lotion-bottle-dreamtime-8.webp",
+    "price": 44.5
+  },
+  {
+    "id": 48,
+    "name": "Hydrating Milk Cleanser",
+    "description": "A gentle milk cleanser that removes makeup and impurities while hydrating your skin.",
+    "image": "/images/body-lotion-dreamtime-11.webp",
+    "price": 21.0
+  },
+  {
+    "id": 49,
+    "name": "Anti-Redness Face Mask",
+    "description": "An anti-redness mask that soothes and calms irritated skin, reducing the appearance of redness.",
+    "image": "/images/bottles-lotion-dreamtime-5.webp",
+    "price": 19.99
+  },
+  {
+    "id": 50,
+    "name": "Deep Cleansing Charcoal Soap",
+    "description": "A deep cleansing soap bar with activated charcoal that detoxifies and purifies your skin.",
+    "image": "/images/cosmetic-products-dreamtime-4.webp",
+    "price": 12.0
+  }
+]

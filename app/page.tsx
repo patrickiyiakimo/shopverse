@@ -1,3 +1,4 @@
+import BestSelling from "@/components/BestSelling";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
@@ -12,7 +13,10 @@ export default function Home() {
       </div>
       <div>
         <Hero />
-     </div>
+      </div>
+      <div>
+        <BestSelling />
+      </div>
     </main>
   );
 }
