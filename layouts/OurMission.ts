@@ -5,13 +5,12 @@ import { SiSimpleanalytics } from "react-icons/si";
 
 
 
-interface OurMissionProp {
-    missionProp: {
+interface OurMissionProp  {
         Icon: ReactElement,
         title: string,
         body: string,
     }
-}
+
 
 export const AboutBody = () => {
     [
