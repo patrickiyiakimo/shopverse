@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
         <ThemeModeScript />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} dark:bg-gray-900 dark:text-white`}>
         <Navbar /> {/* Navbar will persist across all pages */}
         {children}
       </body>
