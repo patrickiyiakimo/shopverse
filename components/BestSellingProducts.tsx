@@ -37,16 +37,16 @@ const BestSellingProducts: React.FC = () => {
   }, []);
 
   return (
-    <div className="pt-32">
+    <div className="pt-20 lg:pt-32">
       <div className="">
-        <h1 className="pb-20 text-center text-6xl font-bold">
+        <h1 className="pb-20 text-center text-2xl font-bold md:text-4xl lg:text-6xl">
           Best Selling Products
         </h1>
-        <section className="mb-20 flex items-center justify-center">
+        <section className="mb-20 ml-20 sm:ml-24 md:ml-40 lg:ml-5 items-center justify-center lg:flex">
           <input
             type="text"
             placeholder="search by description"
-            className="mr-20 border-2 border-gray-300 bg-gray-200 py-4 placeholder:text-gray-900"
+            className="mb-4 mr-5 border-2 border-gray-300 bg-gray-200 py-4 placeholder:text-gray-900 md:mb-0 md:mr-20"
           />
           <input
             type="text"
@@ -54,13 +54,13 @@ const BestSellingProducts: React.FC = () => {
             className="border-2 border-gray-300 bg-gray-200 py-4 placeholder:text-gray-900"
           />
         </section>
-        <div className="grid w-full grid-cols-1 gap-4 rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid w-full  grid-cols-1 gap-4 rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800 md:grid-cols-2 lg:grid-cols-3">
           {products.map((product) => (
             <div key={product.id} className="rounded border p-4">
               <img
                 src={product.image}
                 alt={product.name}
-                className="mb-4 h-auto w-full rounded max-h-52"
+                className="mb-4 h-auto max-h-60 w-full rounded"
               />
               <a href="#">
                 <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
