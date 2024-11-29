@@ -18,15 +18,11 @@ export default function Home() {
     <main className="">
       <nav className="fixed start-0 top-0 z-20 w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
+          <Link href="/">
             <em className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
               ShopVerse
             </em>
-          </a>
-
+          </Link>
           <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
             <Drawer />
             <button
@@ -85,7 +81,7 @@ export default function Home() {
 
               <Link href="cart">
                 <li className="mt-3 block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
-                  <IoCart className="size-6"/>
+                  <IoCart className="size-6" />
                 </li>
               </Link>
 
