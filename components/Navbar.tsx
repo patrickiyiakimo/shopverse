@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { DarkThemeToggle } from "flowbite-react";
+ import { IoCart } from "react-icons/io5";
 import Drawer from "./Drawer";
 import Link from "next/link";
 
@@ -82,9 +83,9 @@ export default function Home() {
                 </li>
               </Link>
 
-              <Link href="blogs">
+              <Link href="cart">
                 <li className="mt-3 block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
-                  Blogs
+                  <IoCart className="size-6"/>
                 </li>
               </Link>
 
@@ -94,7 +95,7 @@ export default function Home() {
                 </li>
               </Link>
               <li>
-                  <DarkThemeToggle />
+                <DarkThemeToggle />
               </li>
             </ul>
           </div>
