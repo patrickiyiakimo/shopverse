@@ -32,7 +32,7 @@ export default function Hero() {
           <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
             Discover Your Style Statement with ShopVerse
           </h1>
-          <p className="mb-8 text-lg font-normal text-gray-500 dark:text-gray-200 sm:px-16 lg:px-48 lg:text-xl">
+          <p className="mb-8 text-lg font-normal text-gray-900 dark:text-gray-200 sm:px-16 lg:px-48 lg:text-xl">
             Explore luxury and sophistication with ShopVerse's exclusive
             fashion-forward collection
           </p>
