@@ -54,7 +54,7 @@ const BestSellingProducts: React.FC = () => {
             className="border-2 border-gray-300 bg-gray-200 py-4 placeholder:text-gray-900"
           />
         </section>
-        <div className="grid w-full  grid-cols-1 gap-4 rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid w-full  grid-cols-1 gap-4 rounded-lg border border-gray-200 bg-white shadow dark:border-gray-900 dark:bg-gray-800 md:grid-cols-2 lg:grid-cols-3">
           {products.map((product) => (
             <div key={product.id} className="rounded border p-4">
               <img
