@@ -28,11 +28,11 @@ const CartPage: React.FC = () => {
 
             <div key={item.id} className="rounded border p-4">
               <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                <table className="w-full text-left text-sm text-gray-500 dark:text-gray-400 rtl:text-right">
-                  <thead className="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400">
+                <table className="w-full text-left text-sm text-gray-500 dark:text-white rtl:text-right">
+                  <thead className="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-white">
                     <tr>
                       <th scope="col" className="px-16 py-3">
-                        <span className="sr-only">Image</span>
+                      Image
                       </th>
                       <th scope="col" className="px-6 py-3">
                         Product
@@ -59,17 +59,17 @@ const CartPage: React.FC = () => {
                           />
                         </td>
                       </td>
-                      <td className="px-6 py-4">
+                      <td className="px-6 py-4 text-gray-900 dark:text-white">
                                       {item.name}
                                       </td>
-                        <div className="flex items-center">
+                        <div className="flex text-gray-950 mt-12 items-center">
                           <button
-                            className="me-3 inline-flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 bg-white p-1 text-sm font-medium text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                            className="me-3 inline-flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 bg-white p-1 text-sm font-medium text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                             type="button"
                           >
                             <span className="sr-only">Quantity button</span>
                             <svg
-                              className="h-3 w-3"
+                              className="size-3"
                               aria-hidden="true"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
@@ -118,7 +118,7 @@ const CartPage: React.FC = () => {
                       
                       <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">
                         <p className="text-lg font-bold">
-                          Price: ${item.price.toFixed(2)}
+                           ${item.price.toFixed(2)}
                         </p>
                       </td>
                       <td className="px-6 py-4">
