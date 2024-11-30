@@ -38,6 +38,7 @@ const BestSellingProducts: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [cart, setCart] = useState<CartItem[]>([]);
   const [showToast, setShowToast] = useState(false);
+ const [addedToCart, setAddedToCart] = useState<Set<number>>(new Set());
 
   useEffect(() => {
     const getProducts = async () => {
@@ -59,17 +60,18 @@ const BestSellingProducts: React.FC = () => {
 
   const handleCartClick = (product: Product) => {
     const existingCartItem = cart.find((item) => item.id === product.id);
+    // setIsAdded(false)
     if (existingCartItem) {
-      toast.info(`${product.name} is already in the cart`, {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
+      // toast.info(`${product.name} is already in the cart`, {
+      //   position: "top-right",
+      //   autoClose: 5000,
+      //   hideProgressBar: false,
+      //   closeOnClick: true,
+      //   pauseOnHover: true,
+      //   draggable: true,
+      //   progress: undefined,
+      //   theme: "light",
+      // });
     } else {
       const newCartItem: CartItem = {
         id: product.id,
@@ -160,12 +162,21 @@ const BestSellingProducts: React.FC = () => {
               <span className="text-3xl font-bold">
                 ${product.price.toFixed(2)}
               </span>
-              <button
-                onClick={() => handleCartClick(product)}
-                className="rounded bg-blue-700 px-5 py-2 text-white hover:bg-blue-800"
-              >
-                Add to cart
-              </button>
+              {addedToCart.has(product.id) ? (
+                <button
+                  disabled
+                  className="cursor-not-allowed rounded bg-gray-400 px-5 py-2 text-white"
+                >
+                  Added to cart
+                </button>
+              ) : (
+                <button
+                  onClick={() => handleCartClick(product)}
+                  className="rounded bg-blue-700 px-5 py-2 text-white hover:bg-blue-800"
+                >
+                  Add to cart
+                </button>
+              )}
             </div>
           </div>
         ))}

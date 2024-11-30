@@ -59,7 +59,7 @@ const CartPage: React.FC = () => {
 
   return (
     <div className="pt-20">
-      <h1 className="pb-20 text-center text-2xl font-bold">Cart Items</h1>
+      <h1 className="py-20 text-center text-2xl md:text-4xl lg:text-6xl font-bold">Cart Items</h1>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         {cart.length > 0 ? (
           cart.map((item) => (
@@ -176,7 +176,7 @@ const CartPage: React.FC = () => {
             </div>
           ))
         ) : (
-          <p>No items in the cart.</p>
+          <p className="text-center text-6xl">No items in your cart.</p>
         )}
         <section className="my-12 ml-10 flex-col items-start justify-between md:ml-20 md:flex-row lg:ml-80">
           <div className="space-y-3 md:w-1/2">
