@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { MdDelete } from "react-icons/md";
+ import { IoCart } from "react-icons/io5";
 
 interface CartItem {
   id: number;
@@ -59,7 +60,9 @@ const CartPage: React.FC = () => {
 
   return (
     <div className="pt-20">
-      <h1 className="py-20 text-center text-2xl md:text-4xl lg:text-6xl font-bold">Cart Items</h1>
+      <h1 className="py-20 text-center text-2xl font-bold md:text-4xl lg:text-6xl">
+        Cart Items
+      </h1>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         {cart.length > 0 ? (
           cart.map((item) => (
@@ -176,7 +179,9 @@ const CartPage: React.FC = () => {
             </div>
           ))
         ) : (
-          <p className="text-center text-6xl">No items in your cart.</p>
+          <p className="text-center text-6xl">
+            No items in your cart. <IoCart className="size-60 ml-20 md:ml-40" />
+          </p>
         )}
         <section className="my-12 ml-10 flex-col items-start justify-between md:ml-20 md:flex-row lg:ml-80">
           <div className="space-y-3 md:w-1/2">
