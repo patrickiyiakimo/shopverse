@@ -55,7 +55,7 @@ const CartPage: React.FC = () => {
                           <img
                             src={item.image}
                             alt={item.name}
-                            className="max-h-full size-16 rounded-full max-w-full md:w-32"
+                            className="max-h-full size-10 md:size-32 lg:size-16 rounded-full max-w-full md:w-32"
                           />
                         </td>
                       </td>
