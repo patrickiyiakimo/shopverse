@@ -62,16 +62,16 @@ const BestSellingProducts: React.FC = () => {
     const existingCartItem = cart.find((item) => item.id === product.id);
     // setIsAdded(false)
     if (existingCartItem) {
-      // toast.info(`${product.name} is already in the cart`, {
-      //   position: "top-right",
-      //   autoClose: 5000,
-      //   hideProgressBar: false,
-      //   closeOnClick: true,
-      //   pauseOnHover: true,
-      //   draggable: true,
-      //   progress: undefined,
-      //   theme: "light",
-      // });
+      toast.info(`${product.name} is already in the cart`, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
     } else {
       const newCartItem: CartItem = {
         id: product.id,
@@ -83,16 +83,16 @@ const BestSellingProducts: React.FC = () => {
       const updatedCart = [...cart, newCartItem];
       setCart(updatedCart);
       localStorage.setItem("cart", JSON.stringify(updatedCart));
-      // toast.success(`${product.name} added to cart`, {
-      //   position: "top-right",
-      //   autoClose: 5000,
-      //   hideProgressBar: false,
-      //   closeOnClick: true,
-      //   pauseOnHover: true,
-      //   draggable: true,
-      //   progress: undefined,
-      //   theme: "light",
-      // });
+      toast.success(`${product.name} added to cart`, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
     }
   };
 
