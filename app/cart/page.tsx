@@ -20,6 +20,17 @@ const CartPage: React.FC = () => {
     setCart(storedCart);
   }, []);
 
+   const handleCartDelete = (id: number) => {
+     // Filter out the item to be deleted
+     const updatedCart = cart.filter((item) => item.id !== id);
+
+     // Update local storage
+     localStorage.setItem("cart", JSON.stringify(updatedCart));
+
+     // Update state
+     setCart(updatedCart);
+   };
+
   return (
     <div className="pt-20">
       <h1 className="pb-20 text-center text-2xl font-bold">Cart Items</h1>
@@ -124,11 +135,11 @@ const CartPage: React.FC = () => {
                         </p>
                       </td>
                       <td className="px-6 py-4">
-                        <a
-                          href="#"
-                          className="text-red-600 dark:text-red-500"
-                        >
-                          <MdDelete className="size-7"/>
+                        <a href="#" className="text-red-600 dark:text-red-500">
+                          <MdDelete
+                            className="size-7"
+                            onClick={() => handleCartDelete(item.id)}
+                          />
                         </a>
                       </td>
                     </tr>
