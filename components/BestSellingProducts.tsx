@@ -97,7 +97,7 @@ const BestSellingProducts: React.FC = () => {
   };
 
   return (
-    <div className="pt-20 lg:pt-32">
+    <div className="pt-20 lg:pt-32 font-mont">
       {showToast && (
         <div
           className="mb-4 flex w-full max-w-xs items-center rounded-lg bg-white p-4 text-gray-500 shadow dark:bg-gray-800 dark:text-gray-400"
@@ -157,7 +157,7 @@ const BestSellingProducts: React.FC = () => {
               className="mb-4 h-auto max-h-60 w-full rounded"
             />
             <h5 className="text-xl font-semibold">{product.name}</h5>
-            <p>{product.description}</p>
+            <p className="">{product.description}</p>
             <div className="flex items-center justify-between">
               <span className="text-3xl font-bold">
                 ${product.price.toFixed(2)}

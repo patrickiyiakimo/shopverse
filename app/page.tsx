@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 export default function Home() {
 
   return (
-    <main className="bg:text-white dark:bg-gray-900">
+    <main className="bg:text-white dark:bg-gray-900 font-mont">
       <div>
         <Navbar />
       </div>

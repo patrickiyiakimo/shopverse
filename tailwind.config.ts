@@ -9,7 +9,11 @@ const config: Config = {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
+    extend: {
+       fontFamily: {
+        mont: ["Space Grotesk", "sans-serif"],
+      },
+    },
   },
   plugins: [flowbite.plugin()],
 };
