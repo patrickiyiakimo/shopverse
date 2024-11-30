@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { MdDelete } from "react-icons/md";
-
 
 interface CartItem {
   id: number;
@@ -20,16 +20,24 @@ const CartPage: React.FC = () => {
     setCart(storedCart);
   }, []);
 
-   const handleCartDelete = (id: number) => {
-     // Filter out the item to be deleted
-     const updatedCart = cart.filter((item) => item.id !== id);
+  const handleCartDelete = (id: number) => {
+    const updatedCart = cart.filter((item) => item.id !== id);
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+    setCart(updatedCart);
+  };
 
-     // Update local storage
-     localStorage.setItem("cart", JSON.stringify(updatedCart));
+  const handleQuantityChange = (id: number, quantity: number) => {
+    const updatedCart = cart.map((item) =>
+      item.id === id ? { ...item, quantity: Math.max(1, quantity) } : item,
+    );
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+    setCart(updatedCart);
+  };
 
-     // Update state
-     setCart(updatedCart);
-   };
+  const totalPrice = cart.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0,
+  );
 
   return (
     <div className="pt-20">
@@ -37,8 +45,6 @@ const CartPage: React.FC = () => {
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         {cart.length > 0 ? (
           cart.map((item) => (
-            //    this is the content
-
             <div key={item.id} className="rounded p-4">
               <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
                 <table className="w-full text-left text-sm text-gray-500 dark:text-white rtl:text-right">
@@ -64,13 +70,11 @@ const CartPage: React.FC = () => {
                   <tbody>
                     <tr className="border-b bg-white hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
                       <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                        <td className="p-4">
-                          <img
-                            src={item.image}
-                            alt={item.name}
-                            className="size-10 max-h-full max-w-full rounded-full md:size-32 md:w-32 lg:size-16"
-                          />
-                        </td>
+                        <img
+                          src={item.image}
+                          alt={item.name}
+                          className="size-10 max-h-full max-w-full rounded-full md:size-32 md:w-32 lg:size-16"
+                        />
                       </td>
                       <td className="px-6 py-4 text-gray-900 dark:text-white">
                         {item.name}
@@ -128,10 +132,9 @@ const CartPage: React.FC = () => {
                           </svg>
                         </button>
                       </div>
-
-                      <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                      <td className="dark:text -white px-6 py-4 font-semibold text-gray-900 dark:text-white">
                         <p className="text-lg font-bold">
-                          ${item.price.toFixed(2)}
+                          ${(item.price * item.quantity).toFixed(2)}
                         </p>
                       </td>
                       <td className="px-6 py-4">
@@ -151,6 +154,21 @@ const CartPage: React.FC = () => {
         ) : (
           <p>No items in the cart.</p>
         )}
+        <section className="my-12 ml-10 flex flex-col items-start justify-between md:ml-20 md:flex-row lg:ml-80">
+          <div className="space-y-3 md:w-1/2">
+            <h3 className="font-bold">Shopping Details</h3>
+            <p>
+              Total Items:{" "}
+              {cart.reduce((total, item) => total + item.quantity, 0)}
+            </p>
+            <p>Total Price: ${totalPrice.toFixed(2)}</p>
+            <Link href="checkout">
+              <button className="btn bg-blue-500 px-3 py-3 text-white">
+                Proceed Checkout
+              </button>
+            </Link>
+          </div>
+        </section>
       </div>
     </div>
   );

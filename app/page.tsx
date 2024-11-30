@@ -1,12 +1,13 @@
 import BestSellingProducts from "@/components/BestSellingProducts";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import { ToastContainer } from "react-toastify";
 
 
 export default function Home() {
 
   return (
-    <main className="dark:bg-gray-900 bg:text-white">
+    <main className="bg:text-white dark:bg-gray-900">
       <div>
         <Navbar />
       </div>
@@ -16,6 +17,7 @@ export default function Home() {
       <div>
         <BestSellingProducts />
       </div>
+      <ToastContainer />
     </main>
   );
 }
