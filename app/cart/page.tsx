@@ -26,7 +26,7 @@ const CartPage: React.FC = () => {
           cart.map((item) => (
             //    this is the content
 
-            <div key={item.id} className="rounded border p-4">
+            <div key={item.id} className="rounded p-4">
               <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
                 <table className="w-full text-left text-sm text-gray-500 dark:text-white rtl:text-right">
                   <thead className="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-white">

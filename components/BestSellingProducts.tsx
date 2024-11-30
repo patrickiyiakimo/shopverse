@@ -107,7 +107,7 @@ const BestSellingProducts: React.FC = () => {
           </button>
         </div>
       )}
-      <h1 className="pb-20 text-center text-2xl font-bold">
+      <h1 className="pb-20 text-center text-2xl md:text-4xl lg:text-6xl font-bold">
         Best Selling Products
       </h1>
       <section className="mb-20 ml-20 items-center justify-center sm:ml-24 md:ml-40 lg:ml-5 lg:flex">
