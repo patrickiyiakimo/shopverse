@@ -79,7 +79,7 @@ const CartPage: React.FC = () => {
                       <td className="px-6 py-4 text-gray-900 dark:text-white">
                         {item.name}
                       </td>
-                      <div className="mt-12 flex items-center text-gray-950">
+                      <div className="mt-9 flex items-center text-gray-950">
                         <button
                           className="me-3 inline-flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 bg-white p-1 text-sm font-medium text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                           type="button"
