@@ -59,7 +59,7 @@ const CartPage: React.FC = () => {
   );
 
   return (
-    <div className="pt-20 font-mont">
+    <div className="py-20 font-mont">
       <h1 className="py-20 text-center text-2xl font-bold md:text-4xl lg:text-6xl">
         Cart Items
       </h1>

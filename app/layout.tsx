@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { ThemeModeScript } from "flowbite-react";
 import Navbar from "@/components/Navbar"; // Import your Navbar component
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${inter.className} dark:bg-gray-900 dark:text-white`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
