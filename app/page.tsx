@@ -1,7 +1,7 @@
 import BestSellingProducts from "@/components/BestSellingProducts";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-// import { ToastContainer } from "react-toastify";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -19,6 +19,9 @@ export default function Home() {
       </div>
       <div>
         <BestSellingProducts />
+      </div>
+      <div>
+        <Footer />
       </div>
       <ToastContainer />
     </main>

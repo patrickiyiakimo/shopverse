@@ -179,8 +179,9 @@ const CartPage: React.FC = () => {
             </div>
           ))
         ) : (
-          <p className="text-center text-2xl md:text-4xl lg:text-6xl">
-            No item in your cart. <IoCart className="size-40 lg:size-60 ml-20 md:ml-40" />
+          <p className="flex items-center justify-center text-center text-2xl md:text-4xl lg:text-6xl">
+            No item in your cart.{" "}
+            <IoCart className="ml-20 size-20 md:ml-40 lg:size-72" />
           </p>
         )}
         <section className="my-12 ml-10 flex-col items-start justify-between md:ml-20 md:flex-row lg:ml-80">
