@@ -193,7 +193,7 @@ const CartPage: React.FC = () => {
             </p>
             <p>Total Price: ${totalPrice.toFixed(2)}</p>
             <Link href="checkout">
-              <button className="btn mt-2 rounded-lg bg-blue-500 px-3 py-3 text-white hover:bg-blue-600">
+              <button className="btn mt-2 rounded-lg bg-blue-500 px-3 py-3 text-white hover:bg-blue-600 transition">
                 Proceed Checkout
               </button>
             </Link>
