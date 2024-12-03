@@ -116,9 +116,6 @@ export default function CartPage() {
           <h3 className="font-mont mr-10 text-xl font-bold text-white md:text-2xl lg:text-4xl">
             Perform Market Research to gain Insights into Industry Trends
           </h3>
-          {/* <button className="whitespace-nowrap bg-blue-400 px-2 rounded-full">
-            Get Started Now
-          </button> */}
           <div className="flex items-center mt-5 text-white dark:text-white">
             <svg
               className="me-1 size-4 text-yellow-300"
