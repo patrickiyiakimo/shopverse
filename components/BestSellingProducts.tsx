@@ -97,7 +97,7 @@ const BestSellingProducts: React.FC = () => {
   };
 
   return (
-    <div className="pt-20 lg:pt-32 font-mont">
+    <div className="pt-20 font-mont lg:pt-32">
       {showToast && (
         <div
           className="mb-4 flex w-full max-w-xs items-center rounded-lg bg-white p-4 text-gray-500 shadow dark:bg-gray-800 dark:text-gray-400"
@@ -154,7 +154,7 @@ const BestSellingProducts: React.FC = () => {
             <img
               src={product.image}
               alt={product.name}
-              className="mb-4 h-auto max-h-60 w-full rounded"
+              className="mb-4 h-auto max-h-60 w-full transform rounded hover:scale-60 hover:opacity-70"
             />
             <h5 className="text-xl font-semibold">{product.name}</h5>
             <p className="">{product.description}</p>
@@ -172,7 +172,7 @@ const BestSellingProducts: React.FC = () => {
               ) : (
                 <button
                   onClick={() => handleCartClick(product)}
-                  className="rounded bg-blue-700 px-5 py-2 text-white hover:bg-blue-800 transition"
+                  className="rounded bg-blue-700 px-5 py-2 text-white transition hover:bg-blue-800"
                 >
                   Add to cart
                 </button>
