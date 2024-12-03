@@ -111,6 +111,12 @@ export default function CartPage() {
           </div>
         </div>
       </div>
+      <section className="bg-blue-800 mt-10 mx-5 md:mx-20 rounded-lg px-10 py-10 md:px-32 md:py-20">
+        <div className="md:flex">
+          <h3 className="font-mont font-bold text-white text-xl md:text-2xl lg:text-4xl">Perform Market Research to gain Insights into Industry Trends</h3>
+          <button>Get Started Now</button>
+        </div>
+      </section>
     </div>
   );
 }
