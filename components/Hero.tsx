@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div className="">
       <section className="py-26 flex min-h-screen items-center justify-center bg-white bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-gray-900 dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
-        <div className="relative z-10 mx-auto max-w-screen-xl px-4 py-8 text-center lg:py-16">
+        <div className="relative z-10 mx-auto max-w-screen-xl px-4 py-8 text-center lg:py-16 hover:transition">
           <a
             href="#"
             className="mb-7 inline-flex items-center justify-between rounded-full bg-blue-100 px-1 py-1 pe-4 text-sm text-blue-700 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800"
