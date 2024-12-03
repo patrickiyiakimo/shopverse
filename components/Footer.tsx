@@ -126,7 +126,7 @@ export default function Footer() {
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <FaFacebook />
-                <span className="sr-only">Facebook page</span>
+                <span className="sr-only hover:transition">Facebook page</span>
               </a>
               <a
                 href="#"
