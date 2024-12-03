@@ -117,8 +117,7 @@ export default function Footer() {
           </div>
           <div className="bg-gray-100 px-4 py-6 dark:bg-gray-700 md:flex md:items-center md:justify-between">
             <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
-              © 2024 <a href="/">ShopVerse™</a>. All Rights
-              Reserved.
+              © 2024 <a href="/">ShopVerse™</a>. All Rights Reserved.
             </span>
             <div className="mt-4 flex space-x-5 sm:justify-center md:mt-0 rtl:space-x-reverse">
               <a
@@ -133,14 +132,16 @@ export default function Footer() {
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <FaDiscord />
-                <span className="sr-only hover:transition">Discord community</span>
+                <span className="sr-only hover:transition">
+                  Discord community
+                </span>
               </a>
               <a
                 href="#"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <FaTwitter />
-                <span className="sr-only">Twitter page</span>
+                <span className="sr-only hover:transition">Twitter page</span>
               </a>
               <a
                 href="#"
