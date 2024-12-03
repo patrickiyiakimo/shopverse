@@ -154,7 +154,7 @@ const BestSellingProducts: React.FC = () => {
             <img
               src={product.image}
               alt={product.name}
-              className="mb-4 h-auto max-h-60 w-full transform rounded hover:scale-60 hover:opacity-70"
+              className="mb-4 h-auto max-h-60 w-full transform rounded transition-transform duration-300 ease-in-out hover:scale-105 hover:opacity-70"
             />
             <h5 className="text-xl font-semibold">{product.name}</h5>
             <p className="">{product.description}</p>
