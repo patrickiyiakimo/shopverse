@@ -133,7 +133,7 @@ export default function Footer() {
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <FaDiscord />
-                <span className="sr-only">Discord community</span>
+                <span className="sr-only hover:transition">Discord community</span>
               </a>
               <a
                 href="#"
