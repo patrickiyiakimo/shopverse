@@ -148,7 +148,7 @@ export default function Footer() {
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <FaGithub />
-                <span className="sr-only">GitHub account</span>
+                <span className="sr-only hover:transition">GitHub account</span>
               </a>
             </div>
           </div>
