@@ -137,7 +137,7 @@ export default function CartPage() {
           </div>
         </div>
         <hr className="mb-2 mt-2" />
-        <div className="font-mont lg:flex">
+        <div className="font-mont lg:flex text-white">
           <span className="flex uppercase">
             <p className="mr-2 text-xl md:text-3xl lg:text-5xl">12K+</p>
             <p className="mr-3 mt-1 text-sm md:text-[15px]">total projects completed</p>
