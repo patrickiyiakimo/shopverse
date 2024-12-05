@@ -138,6 +138,7 @@ export default function CartPage() {
             </a>
           </div>
         </div>
+        <hr className="mt-2"/>
       </section>
     </div>
   );
