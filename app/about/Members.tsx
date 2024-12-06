@@ -61,10 +61,10 @@ export default function Members() {
           </div>
         </div>
         <div>
-          <h1 className="ml-20 mt-10 font-mont text-5xl font-semibold">
+          <h1 className="ml-10 text-2xl  lg:ml-20 mt-10 font-mont md:text-3xl lg:text-5xl font-semibold">
             We Provide Creative Solutions
           </h1>
-          <p className="text-normal px-20 py-1 font-mont font-normal">
+          <p className="text-normal ml-10  lg:mx-20 py-1 font-mont font-normal">
             Globally engage cross-media leadership skills before cross-media
             innovation develop standardised platforms without robust
             applications. Conveniently go forward collaboration and
@@ -72,7 +72,7 @@ export default function Members() {
           </p>
           <a
             href="#"
-            className="ml-20 mt-10 flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 md:max-w-xl md:flex-row"
+            className="px-10 lg:ml-20 mt-10 flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 md:max-w-xl md:flex-row"
           >
             <img
               className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
