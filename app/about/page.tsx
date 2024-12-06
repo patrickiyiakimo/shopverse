@@ -1,4 +1,5 @@
 import React from "react";
+import Members from "./Members";
 
 export default function CartPage() {
   return (
@@ -152,6 +153,7 @@ export default function CartPage() {
           </span>
         </div>
       </section>
+      <Members />
     </div>
   );
 }
