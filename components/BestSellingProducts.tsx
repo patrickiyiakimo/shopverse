@@ -102,7 +102,7 @@ const BestSellingProducts: React.FC = () => {
             key={product.id}
             className="rounded border p-4 dark:border-gray-600"
           >
-            <FaHeart className="absolute ml-5 mt-5 size-5 text-green-900" />
+            <FaHeart className="absolute ml-5 mt-5 size-5 text-green-900 hover:cursor-pointer hover:text-green-600" />
             <img
               src={product.image}
               alt={product.name}
