@@ -3,6 +3,8 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
+import { FaHeart } from "react-icons/fa";
+
 
 interface Product {
   id: number;
@@ -89,7 +91,7 @@ const BestSellingProducts: React.FC = () => {
   const totalPages = Math.ceil(products.length / productsPerPage);
 
   return (
-    <div className="pt-20 pb-40 font-mont lg:pt-32 ">
+    <div className="pb-40 pt-20 font-mont lg:pt-32 ">
       <h1 className="pb-20 text-center text-2xl font-bold md:text-4xl lg:text-6xl">
         Best Selling Products
       </h1>
@@ -100,6 +102,7 @@ const BestSellingProducts: React.FC = () => {
             key={product.id}
             className="rounded border p-4 dark:border-gray-600"
           >
+            <FaHeart className="absolute ml-5 mt-5 size-5" />
             <img
               src={product.image}
               alt={product.name}
