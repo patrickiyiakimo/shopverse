@@ -80,7 +80,7 @@ const BestSellingProducts: React.FC = () => {
     }
   };
 
-  // Calculate the products to display for the current page
+  // Calculating the products to display for the current page
   const startIndex = (currentPage - 1) * productsPerPage;
   const currentProducts = products.slice(
     startIndex,
