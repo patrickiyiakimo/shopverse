@@ -87,7 +87,7 @@ const BestSellingProducts: React.FC = () => {
     startIndex + productsPerPage,
   );
 
-  // Calculate the total number of pages
+  // Calculating the total number of pages
   const totalPages = Math.ceil(products.length / productsPerPage);
 
   return (
