@@ -5,7 +5,7 @@ export default function page() {
     <div className="min-h-screen font-mont">
       <div className="flex h-screen">
         {/* Left Side: Image */}
-        <div className="w-1/2 hidden md:block">
+        <div className="hidden w-1/2 md:block">
           <img
             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
             alt="Signup"
@@ -14,8 +14,8 @@ export default function page() {
         </div>
 
         {/* Right Side: Form */}
-        <div className="flex w-1/2 items-center justify-center">
-          <form className="w-3/4 max-w-md rounded p-8 shadow-md">
+        <div className=" flex items-center justify-center md:flex md:w-1/2">
+          <form className="ml-14 md:ml-0 md:w-3/4 max-w-md rounded p-8 shadow-md">
             <h2 className="mb-6 text-center text-2xl font-bold">Sign Up</h2>
             <div className="mb-4">
               <label
@@ -67,7 +67,7 @@ export default function page() {
             </button>
             <p className="mt-4 text-center text-sm text-gray-500 dark:text-white">
               Already have an account?
-              <a href="#" className="text-blue-600 pl-2">
+              <a href="#" className="pl-2 text-blue-600">
                 Log in
               </a>
             </p>
