@@ -65,7 +65,7 @@ export default function Drawer() {
           </svg>
           <span className="sr-only">Close menu</span>
         </button>
-        <form className="mb-6">
+        <form className="mb-6 pt-20">
           <div className="mb-6">
             <label className="mb-2 block text-sm font-medium text-gray-900 dark:text-white">
               Your email
