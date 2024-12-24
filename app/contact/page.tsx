@@ -61,7 +61,7 @@ export default function page() {
             </div>
             <button
               type="submit"
-              className="w-full rounded-md bg-blue-600 py-2 text-white transition duration-300 hover:bg-blue-700"
+              className="w-full rounded-md bg-blue-700 py-2 text-white transition duration-300 hover:bg-blue-800"
             >
               Sign Up
             </button>
