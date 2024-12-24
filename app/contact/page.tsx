@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen font-mont">
       <div className="flex h-screen">
         {/* Left Side: Image */}
-        <div className="w-1/2">
+        <div className="w-1/2 hidden md:block">
           <img
             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
             alt="Signup"
