@@ -78,7 +78,7 @@ const CartPage: React.FC = () => {
                         Product
                       </th>
                       <th scope="col" className="px-6 py-3">
-                        Qty
+                        Quantity
                       </th>
                       <th scope="col" className="px-6 py-3">
                         Price
@@ -179,7 +179,7 @@ const CartPage: React.FC = () => {
             </div>
           ))
         ) : (
-          <p className="flex items-center font-semibold justify-center text-center text-2xl md:text-4xl lg:text-6xl">
+          <p className="flex items-center justify-center text-center text-2xl font-semibold md:text-4xl lg:text-6xl">
             No item in your cart.{" "}
             <IoCart className="ml-20 size-20 md:ml-40 lg:size-72" />
           </p>
@@ -193,7 +193,7 @@ const CartPage: React.FC = () => {
             </p>
             <p>Total Price: ${totalPrice.toFixed(2)}</p>
             <Link href="checkout">
-              <button className="btn mt-2 rounded-lg bg-blue-500 px-3 py-3 text-white hover:bg-blue-600 transition">
+              <button className="btn mt-2 rounded-lg bg-blue-700 px-3 py-3 text-white transition duration-300 hover:bg-blue-800">
                 Proceed Checkout
               </button>
             </Link>
