@@ -7,7 +7,7 @@ export default function CartPage() {
       <section className="font-mont dark:bg-gray-900">
         <div className="mx-auto max-w-screen-xl px-4 py-8 text-center lg:py-16">
           <h1 className="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-4xl lg:text-6xl">
-            we’re passionate about more than just selling products.
+            We’re passionate about more than just selling products.
           </h1>
           <p className="mb-8 text-lg font-normal text-gray-900 dark:text-white sm:px-16 lg:px-48 lg:text-xl">
             Our skincare solutions are crafted using the finest natural
