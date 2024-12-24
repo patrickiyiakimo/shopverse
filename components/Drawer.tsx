@@ -107,16 +107,6 @@ export default function Drawer() {
             Send message
           </button>
         </form>
-        <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-          <a href="#" className="hover:underline">
-            info@company.com
-          </a>
-        </p>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          <a href="#" className="hover:underline">
-            212-456-7890
-          </a>
-        </p>
       </div>
     </div>
   );
