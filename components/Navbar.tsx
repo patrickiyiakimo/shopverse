@@ -5,14 +5,18 @@ import { DarkThemeToggle } from "flowbite-react";
 import { IoCart } from "react-icons/io5";
 import Drawer from "./Drawer";
 import Link from "next/link";
-
+import { usePathname } from "next/navigation"; // Import usePathname
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname(); // Get the current route
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+   const isActive = (path: string): boolean => pathname === path;
 
   return (
     <main className="font-mont">
@@ -60,26 +64,49 @@ export default function Home() {
             <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse">
               <Link href="/">
                 <li
-                  className="mt-3 block rounded bg-blue-700 px-3 py-2 text-white md:bg-transparent md:p-0 md:text-blue-700 md:dark:text-blue-500"
-                  aria-current="page"
+                  className={`mt-3 block rounded px-3 py-2 ${
+                    isActive("/")
+                      ? "bg-blue-700 text-white"
+                      : "text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                  } md:bg-transparent md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500`}
+                  aria-current={isActive("/") ? "page" : undefined}
                 >
                   Home
                 </li>
               </Link>
 
-              <Link href="about">
-                <li className="mt-3 block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
+              <Link href="/about">
+                <li
+                  className={`mt-3 block rounded px-3 py-2 ${
+                    isActive("/about")
+                      ? "bg-blue-700 text-white"
+                      : "text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                  } md:bg-transparent md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500`}
+                >
                   About
                 </li>
               </Link>
 
-              <Link href="cart">
-                <li className="mt-3 block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
+              <Link href="/cart">
+                <li
+                  className={`mt-3 block rounded px-3 py-2 ${
+                    isActive("/cart")
+                      ? "bg-blue-700 text-white"
+                      : "text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                  } md:bg-transparent md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500`}
+                >
                   <IoCart className="size-6" />
                 </li>
               </Link>
-              <Link href="contact">
-                <li className="mt-3 block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
+
+              <Link href="/contact">
+                <li
+                  className={`mt-3 block rounded px-3 py-2 ${
+                    isActive("/contact")
+                      ? "bg-blue-700 text-white"
+                      : "text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                  } md:bg-transparent md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500`}
+                >
                   Sign Up
                 </li>
               </Link>
