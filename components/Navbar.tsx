@@ -5,11 +5,11 @@ import { DarkThemeToggle } from "flowbite-react";
 import { IoCart } from "react-icons/io5";
 import Drawer from "./Drawer";
 import Link from "next/link";
-import { usePathname } from "next/navigation"; // Import usePathname
+import { usePathname } from "next/navigation";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname(); // Get the current route
+  const pathname = usePathname();
 
 
   const toggleMenu = () => {
