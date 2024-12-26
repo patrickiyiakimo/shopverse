@@ -11,12 +11,11 @@ export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-   const isActive = (path: string): boolean => pathname === path;
+  const isActive = (path: string): boolean => pathname === path;
 
   return (
     <main className="font-mont">
@@ -66,7 +65,7 @@ export default function Home() {
                 <li
                   className={`mt-3 block rounded px-3 py-2 ${
                     isActive("/")
-                      ? "bg-blue-700 text-white"
+                      ? "bg-blue-700 text-blue-700"
                       : "text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
                   } md:bg-transparent md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500`}
                   aria-current={isActive("/") ? "page" : undefined}
@@ -79,7 +78,7 @@ export default function Home() {
                 <li
                   className={`mt-3 block rounded px-3 py-2 ${
                     isActive("/about")
-                      ? "bg-blue-700 text-white"
+                      ? "bg-blue-700 text-blue-700"
                       : "text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
                   } md:bg-transparent md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500`}
                 >
@@ -91,7 +90,7 @@ export default function Home() {
                 <li
                   className={`mt-3 block rounded px-3 py-2 ${
                     isActive("/cart")
-                      ? "bg-blue-700 text-white"
+                      ? "bg-blue-700 text-blue-700"
                       : "text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
                   } md:bg-transparent md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500`}
                 >
@@ -103,7 +102,7 @@ export default function Home() {
                 <li
                   className={`mt-3 block rounded px-3 py-2 ${
                     isActive("/contact")
-                      ? "bg-blue-700 text-white"
+                      ? "bg-blue-700 text-blue-700"
                       : "text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
                   } md:bg-transparent md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500`}
                 >
