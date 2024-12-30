@@ -19,7 +19,7 @@ export default function Drawer() {
           type="button"
           onClick={toggleDrawer}
         >
-          <GrContact />
+          <GrContact className="text-2xl"/>
         </button>
       </div>
 
