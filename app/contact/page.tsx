@@ -16,7 +16,7 @@ export default function page() {
 
         {/* Right Side: Form */}
         <div className=" flex items-center justify-center md:flex md:w-1/2">
-          <form className="ml-14 md:ml-0 md:w-3/4 max-w-md rounded p-8 shadow-md">
+          <form className="ml-14 max-w-md rounded p-8 shadow-md md:ml-0 md:w-3/4">
             <h2 className="mb-6 text-center text-2xl font-bold">Sign Up</h2>
             <div className="mb-4">
               <label
@@ -28,6 +28,7 @@ export default function page() {
               <input
                 type="text"
                 id="name"
+                required
                 className="mt-1 block w-full rounded-md border border-gray-300 px-4 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500"
                 placeholder="Enter your name"
               />
@@ -42,6 +43,7 @@ export default function page() {
               <input
                 type="email"
                 id="email"
+                required
                 className="mt-1 block w-full rounded-md border border-gray-300 px-4 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500"
                 placeholder="Enter your email"
               />
@@ -56,6 +58,7 @@ export default function page() {
               <input
                 type="password"
                 id="password"
+                required
                 className="mt-1 block w-full rounded-md border border-gray-300 px-4 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500"
                 placeholder="Enter your password"
               />
