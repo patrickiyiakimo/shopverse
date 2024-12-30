@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { FaLocationArrow } from "react-icons/fa";
+import { GrContact } from "react-icons/gr";
+
 
 
 export default function Drawer() {
@@ -17,7 +19,7 @@ export default function Drawer() {
           type="button"
           onClick={toggleDrawer}
         >
-          C
+          <GrContact />
         </button>
       </div>
 
@@ -104,9 +106,9 @@ export default function Drawer() {
           </div>
           <button
             type="submit"
-            className="mb-2 w-full flex justify-center items-center rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-medium text-white transition duration-300 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="mb-2 flex w-full items-center justify-center rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-medium text-white transition duration-300 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
-            Send Message <FaLocationArrow className="ml-2 mt-1"/>
+            Send Message <FaLocationArrow className="ml-2 mt-1" />
           </button>
         </form>
       </div>
