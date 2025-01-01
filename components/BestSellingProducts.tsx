@@ -22,6 +22,12 @@ interface CartItem {
   quantity: number;
 }
 
+interface FavouriteItem{
+  id: number;
+  image: string;
+  name: string;
+}
+
 const fetchProducts = async (): Promise<Product[]> => {
   try {
     const response = await fetch("/skincare.json");
@@ -55,6 +61,31 @@ const BestSellingProducts: React.FC = () => {
     setCart(storedCart);
   }, []);
 
+  // const addFavouriteItems = (product: Product) => {
+  //   const existingFavouriteItem = addFavouriteItems.find((item) => item.id === product.id);
+  //   if (existingFavouriteItem) {
+  //     toast.info(`${product.name} is already added to favourites`, {
+  //       position: "top-left",
+  //       autoClose: 5000,
+  //     });
+  //   } else {
+  //     const newFavouriteItem: FavouriteItem = {
+  //       id: product.id,
+  //       image: product.image,
+  //       name: product.name,
+  //       price: product.price,
+  //       quantity: 1,
+  //     };
+  //     const updateFavourites = [...favourite, newFavouriteItem];
+  //     setFavourite(updatedFavourite);
+  //     localStorage.setItem("favourite", JSON.stringify(updatedFavourite));
+  //     toast.success(`${product.name} added to favourite`, {
+  //       position: "top-left",
+  //       autoClose: 5000,
+  //     });
+  //   }
+  // }
+
   const handleCartClick = (product: Product) => {
     const existingCartItem = cart.find((item) => item.id === product.id);
     if (existingCartItem) {
@@ -80,6 +111,7 @@ const BestSellingProducts: React.FC = () => {
     }
   };
 
+  //pagination calculation
   // Calculating the products to display for the current page
   const startIndex = (currentPage - 1) * productsPerPage;
   const currentProducts = products.slice(
@@ -102,7 +134,7 @@ const BestSellingProducts: React.FC = () => {
             key={product.id}
             className="rounded border p-4 dark:border-gray-600"
           >
-            <FaHeart className="absolute ml-5 mt-5 size-5 text-red-600 hover:cursor-pointer" />
+            <FaHeart className="absolute ml-5 mt-5 size-5 text-red-600 hover:cursor-pointer"/>
             <img
               src={product.image}
               alt={product.name}
