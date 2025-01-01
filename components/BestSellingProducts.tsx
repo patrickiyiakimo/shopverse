@@ -62,7 +62,7 @@ const BestSellingProducts: React.FC = () => {
   const handleCartClick = (product: Product) => {
     const existingCartItem = cart.find((item) => item.id === product.id);
     if (existingCartItem) {
-      toast.info(`${product.name} is already in the cart`, {
+      toast.error(`${product.name} is already in the cart`, {
         position: "top-right",
         autoClose: 5000,
       });
@@ -84,29 +84,36 @@ const BestSellingProducts: React.FC = () => {
     }
   };
 
-  const handleFavouriteClick = (product: Product) => {
-    const existingFavorites = JSON.parse(
-      localStorage.getItem("favourites") || "[]",
-    );
-    const isAlreadyFavorite = existingFavorites.some(
-      (fav: Product) => fav.id === product.id,
-    );
+const handleFavouriteClick = (product: Product) => {
+  const existingFavorites = JSON.parse(
+    localStorage.getItem("favourites") || "[]",
+  );
+  const isAlreadyFavorite = existingFavorites.some(
+    (fav: Product) => fav.id === product.id,
+  );
 
-    if (isAlreadyFavorite) {
-      toast.info("Item is already in favorites", {
-        position: "top-left",
-        autoClose: 5000,
-      });
-    } else {
-      const updatedFavourites = [...existingFavorites, product];
-      localStorage.setItem("favourites", JSON.stringify(updatedFavourites));
-      toast.success(`${product.name} added to favorites`, {
-        position: "top-left",
-        autoClose: 5000,
-      });
-    }
-  };
+  if (isAlreadyFavorite) {
+    // Remove item from favourites
+    const updatedFavourites = existingFavorites.filter(
+      (fav: Product) => fav.id !== product.id,
+    );
+    localStorage.setItem("favourites", JSON.stringify(updatedFavourites));
+    toast.error("Item removed from favourites", {
+      position: "top-left",
+      autoClose: 5000,
+    });
+  } else {
+    // Add item to favourites
+    const updatedFavourites = [...existingFavorites, product];
+    localStorage.setItem("favourites", JSON.stringify(updatedFavourites));
+    toast.success(`${product.name} added to favourites`, {
+      position: "top-left",
+      autoClose: 5000,
+    });
+  }
 
+  // setFavourites(updatedFavourites); // Update the state to reflect changes
+};
 
   const startIndex = (currentPage - 1) * productsPerPage;
   const currentProducts = products.slice(
@@ -128,14 +135,16 @@ const BestSellingProducts: React.FC = () => {
             key={product.id}
             className="relative rounded border p-4 dark:border-gray-600"
           >
+
             <FaHeart
               onClick={() => handleFavouriteClick(product)}
               className={`absolute ml-5 mt-5 size-5 hover:cursor-pointer ${
-                favourites.includes(product.id)
+                favourites.some((fav) => fav === product.id)
                   ? "text-green-600"
                   : "text-red-600"
               }`}
             />
+
             <img
               src={product.image}
               alt={product.name}
