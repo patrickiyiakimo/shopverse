@@ -26,12 +26,10 @@ export default function RightDrawer() {
 
   return (
     <>
-      {/* Trigger Button */}
       <div className="items-center justify-center" onClick={toggleDrawer}>
         <FaHeart className="mt-3 hover:cursor-pointer" />
       </div>
 
-      {/* Drawer Overlay */}
       {isOpen && (
         <div
           className="fixed inset-0 z-40 bg-black bg-opacity-50"
@@ -39,13 +37,12 @@ export default function RightDrawer() {
         ></div>
       )}
 
-      {/* Drawer Panel */}
       <div
         className={`fixed right-0 top-0 z-50 h-full w-80 transform bg-white shadow-lg dark:bg-gray-800 dark:text-white ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-700`}
       >
-        {/* Drawer Header */}
+
         <div className="flex items-center justify-between border-b p-4">
           <h2 className="text-lg font-medium">Favorite Items</h2>
           <button
@@ -56,7 +53,6 @@ export default function RightDrawer() {
           </button>
         </div>
 
-        {/* Drawer Content */}
         <div className="max-h-[calc(100vh-100px)] overflow-y-auto p-4">
           <div className="p-4">
             <p className="mb-6 text-sm text-gray-900 dark:text-white">
@@ -80,7 +76,6 @@ export default function RightDrawer() {
                 />
                 <div>
                   <h4 className="font-bold">{item.name}</h4>
-                  {/* <p> ${(item.price * item.quantity).toFixed(2)}</p> */}
                 </div>
               </div>
             ))
