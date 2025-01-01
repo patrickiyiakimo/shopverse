@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { FaHeart } from "react-icons/fa";
 
 export default function RightDrawer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,13 +11,8 @@ export default function RightDrawer() {
   return (
     <>
       {/* Trigger Button */}
-      <div className="flex min-h-[50vh] items-center justify-center">
-        <button
-          className="rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
-          onClick={toggleDrawer}
-        >
-          Show Drawer
-        </button>
+      <div className=" items-center justify-center" onClick={toggleDrawer}>
+        <FaHeart className="mt-3 hover:cursor-pointer" />
       </div>
 
       {/* Drawer Overlay */}
@@ -29,15 +25,15 @@ export default function RightDrawer() {
 
       {/* Drawer Panel */}
       <div
-        className={`fixed right-0 top-0 z-50 h-full w-80 transform bg-white shadow-lg ${
+        className={`fixed right-0 top-0 z-50 h-full w-80 transform bg-white  shadow-lg dark:bg-gray-800 dark:text-white ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300`}
       >
         {/* Drawer Header */}
         <div className="flex items-center justify-between border-b p-4">
-          <h2 className="text-lg font-medium">Drawer</h2>
+          <h2 className="text-lg font-medium">Favourite Items</h2>
           <button
-            className="text-gray-500 hover:text-gray-700"
+            className="text-gray-900 dark:hover:text-white"
             onClick={toggleDrawer}
           >
             ✕
@@ -46,13 +42,12 @@ export default function RightDrawer() {
 
         {/* Drawer Content */}
         <div className="p-4">
-          <p className="mb-6 text-sm text-gray-500">
-            Supercharge your hiring by taking advantage of our&nbsp;
-            <a href="#" className="text-cyan-600 underline hover:no-underline">
-              limited-time sale
-            </a>
-            &nbsp;for Flowbite Docs + Job Board. Unlimited access to over 190K
-            top-ranked candidates and the #1 design job board.
+          <p className="mb-6 text-sm text-gray-900 dark:text-white">
+            Boost your shopping experience by taking advantage of our
+           <em>'Add to Favourites' </em> feature! Save your most-loved
+            products for easy access and never miss out on your must-haves.
+            Discover why creating your personalized wishlist is the smartest way
+            to shop!
           </p>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <a
@@ -63,7 +58,7 @@ export default function RightDrawer() {
             </a>
             <a
               href="#"
-              className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:ring-4 focus:ring-cyan-300"
+              className="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2 text-center text-sm font-medium text-white duration-300 hover:bg-blue-800 focus:ring-4 focus:ring-cyan-300"
             >
               Get access&nbsp;
               <svg
