@@ -84,22 +84,29 @@ const BestSellingProducts: React.FC = () => {
     }
   };
 
-  const handleFavouriteClick = (productId: number) => {
-    if (favourites.includes(productId)) {
-      toast.info("Item is already in favourites", {
+  const handleFavouriteClick = (product: Product) => {
+    const existingFavorites = JSON.parse(
+      localStorage.getItem("favourites") || "[]",
+    );
+    const isAlreadyFavorite = existingFavorites.some(
+      (fav: Product) => fav.id === product.id,
+    );
+
+    if (isAlreadyFavorite) {
+      toast.info("Item is already in favorites", {
         position: "top-left",
         autoClose: 5000,
       });
     } else {
-      const updatedFavourites = [...favourites, productId];
-      setFavourites(updatedFavourites);
+      const updatedFavourites = [...existingFavorites, product];
       localStorage.setItem("favourites", JSON.stringify(updatedFavourites));
-      toast.success("Item added to favourites", {
+      toast.success(`${product.name} added to favorites`, {
         position: "top-left",
         autoClose: 5000,
       });
     }
   };
+
 
   const startIndex = (currentPage - 1) * productsPerPage;
   const currentProducts = products.slice(
@@ -122,7 +129,7 @@ const BestSellingProducts: React.FC = () => {
             className="relative rounded border p-4 dark:border-gray-600"
           >
             <FaHeart
-              onClick={() => handleFavouriteClick(product.id)}
+              onClick={() => handleFavouriteClick(product)}
               className={`absolute ml-5 mt-5 size-5 hover:cursor-pointer ${
                 favourites.includes(product.id)
                   ? "text-green-600"
