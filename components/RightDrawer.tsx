@@ -80,7 +80,7 @@ export default function RightDrawer() {
               </div>
             ))
           ) : (
-            <p className="text-gray-900 ml-4">No favorite items yet.</p>
+            <p className="text-gray-900 dark:text-white ml-4">No favorite items yet.</p>
           )}
         </div>
       </div>
