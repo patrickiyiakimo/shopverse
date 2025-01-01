@@ -111,8 +111,6 @@ const handleFavouriteClick = (product: Product) => {
       autoClose: 5000,
     });
   }
-
-  // setFavourites(updatedFavourites); // Update the state to reflect changes
 };
 
   const startIndex = (currentPage - 1) * productsPerPage;
@@ -139,7 +137,7 @@ const handleFavouriteClick = (product: Product) => {
             <FaHeart
               onClick={() => handleFavouriteClick(product)}
               className={`absolute ml-5 mt-5 size-5 hover:cursor-pointer ${
-                favourites.some((fav) => fav === product.id)
+                favourites.includes(product.id)
                   ? "text-green-600"
                   : "text-red-600"
               }`}
