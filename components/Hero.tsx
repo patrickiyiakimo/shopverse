@@ -3,18 +3,18 @@ import React from "react";
 export default function Hero() {
   return (
     <div className="">
-      <section className="py-26 flex min-h-screen items-center justify-center bg-white bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-gray-900 dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
-        <div className="relative z-10 mx-auto max-w-screen-xl px-4 py-8 text-center lg:py-16 hover:transition">
+      <section className="py-28 flex min-h-screen items-center justify-center bg-white bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-gray-900 dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+        <div className="relative z-10 mx-auto max-w-screen-xl px-4 py-8 text-center hover:transition lg:py-16">
           <a
             href="#"
-            className="mb-7 inline-flex items-center justify-between rounded-full bg-blue-100 px-1 py-1 pe-4 text-sm text-blue-700 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800"
+            className="mb-7 inline-flex items-center justify-between rounded-full bg-blue-100 p-1 pe-4 text-sm text-blue-700 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800"
           >
             <span className="me-3 rounded-full bg-blue-600 px-4 py-1.5 text-xs text-white">
               New
             </span>
             <span className="text-sm font-medium">Glow In Style</span>
             <svg
-              className="ms-2 h-2.5 w-2.5 rtl:rotate-180"
+              className="ms-2 size-2.5 rtl:rotate-180"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
