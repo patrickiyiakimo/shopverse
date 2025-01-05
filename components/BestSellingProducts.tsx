@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { FaHeart } from "react-icons/fa";
+import Image from "next/image";
 
 interface Product {
   id: number;
@@ -143,10 +144,12 @@ const handleFavouriteClick = (product: Product) => {
               }`}
             />
 
-            <img
+            <Image
               src={product.image}
               alt={product.name}
-              className="mb-4 h-auto max-h-60 w-full rounded"
+              width={400}
+              height={400}
+              className="mb-4 h-auto max-h-60  rounded"
             />
             <h5 className="text-xl font-semibold">{product.name}</h5>
             <p>{product.description}</p>
