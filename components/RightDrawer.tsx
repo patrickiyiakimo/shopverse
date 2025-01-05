@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { FaHeart } from "react-icons/fa";
 
@@ -38,7 +39,7 @@ export default function RightDrawer() {
       )}
 
       <div
-        className={`fixed right-0 top-0 z-50 h-full w-80 transform bg-white shadow-lg dark:bg-gray-800 dark:text-white ${
+        className={`fixed right-0 top-0 z-50 h-full w-80 bg-white shadow-lg dark:bg-gray-800 dark:text-white ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-700`}
       >
@@ -69,10 +70,12 @@ export default function RightDrawer() {
                 key={item.id}
                 className="mb-4 flex items-center space-x-4 border-b pb-4"
               >
-                <img
+                <Image
                   src={item.image}
                   alt={item.name}
-                  className="h-16 w-16 rounded-full object-cover"
+                  width={60}
+                  height={60}
+                  className="rounded-lg object-cover"
                 />
                 <div>
                   <h4 className="font-bold">{item.name}</h4>
@@ -80,7 +83,7 @@ export default function RightDrawer() {
               </div>
             ))
           ) : (
-            <p className="text-gray-900 dark:text-white ml-4">No favorite items yet.</p>
+            <p className="ml-4 text-gray-900 dark:text-white">No favorite items yet.</p>
           )}
         </div>
       </div>
