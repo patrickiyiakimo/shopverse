@@ -3,7 +3,7 @@ import React from "react";
 export default function Hero() {
   return (
     <div className="">
-      <section className="py-28 flex min-h-screen items-center justify-center bg-white bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-gray-900 dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+      <section className="flex min-h-screen items-center justify-center bg-white bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] py-28 dark:bg-gray-900 dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
         <div className="relative z-10 mx-auto max-w-screen-xl px-4 py-8 text-center hover:transition lg:py-16">
           <a
             href="#"
@@ -43,7 +43,7 @@ export default function Hero() {
             <div className="relative">
               <div className="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3.5 rtl:inset-x-0">
                 <svg
-                  className="h-4 w-4 text-gray-500 dark:text-gray-400"
+                  className="size-4 text-gray-500 dark:text-gray-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -56,20 +56,20 @@ export default function Hero() {
               <input
                 type="email"
                 id="default-email"
-                className="block w-full rounded-lg border border-gray-300 bg-white p-4 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                className="dark:placeholder:gray-400 block w-full rounded-lg border border-gray-300 bg-white p-4 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:focus:border-blue-500 dark:focus:ring-blue-500"
                 placeholder="Enter your email here..."
                 required
               />
               <button
                 type="submit"
-                className="absolute bottom-2.5 end-2.5 rounded-lg bg-blue-700 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800 transition focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="absolute bottom-2.5 end-2.5 rounded-lg px-4 py-2 text-sm  font-medium bg-blue-700 text-white transition hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 Sign up
               </button>
             </div>
           </form>
         </div>
-        <div className="absolute left-0 top-0 z-0 h-full w-full bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900"></div>
+        <div className="absolute left-0 top-0 z-0 size-full bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900"></div>
       </section>
     </div>
   );
