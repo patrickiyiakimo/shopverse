@@ -1,16 +1,19 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
 export default function page() {
   return (
     <div className="min-h-screen font-mont">
-      <div className="flex h-screen">
+      <div className="flex mb-96 h-screen">
         {/* Left Side: Image */}
-        <div className="hidden w-1/2 md:block">
-          <img
+        <div className="hidden mb-20 w-1/2 md:block">
+          <Image
+            width={800}
+            height={500}
             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
             alt="Signup"
-            className="size-full object-cover"
+            className="object-cover"
           />
         </div>
 
