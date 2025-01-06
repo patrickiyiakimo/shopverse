@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { MdDelete } from "react-icons/md";
 import { IoCart } from "react-icons/io5";
+import Image from "next/image";
 
 interface CartItem {
   id: number;
@@ -91,9 +92,11 @@ const CartPage: React.FC = () => {
                   <tbody>
                     <tr className="border-b bg-white hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
                       <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                        <img
+                        <Image
                           src={item.image}
                           alt={item.name}
+                          width={60}
+                          height={60}
                           className="size-10 max-h-full max-w-full rounded-full md:size-32 md:w-32 lg:size-10"
                         />
                       </td>
@@ -193,7 +196,7 @@ const CartPage: React.FC = () => {
             </p>
             <p>Total Price: ${totalPrice.toFixed(2)}</p>
             <Link href="checkout">
-              <button className="btn mt-2 rounded-lg bg-blue-700 px-3 py-3 text-white transition duration-300 hover:bg-blue-800">
+              <button className="mt-2 rounded-lg bg-blue-700 p-3 text-white transition duration-300 hover:bg-blue-800">
                 Proceed Checkout
               </button>
             </Link>
