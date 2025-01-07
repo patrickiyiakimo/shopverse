@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
@@ -7,16 +8,18 @@ export default function page() {
       <div className="flex h-screen">
         {/* Left Side: Image */}
         <div className="hidden w-1/2 md:block">
-          <img
+          <Image
+            width={800}
+            height={500}
             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
             alt="Signup"
-            className="size-full object-cover"
+            className="object-cover"
           />
         </div>
 
         {/* Right Side: Form */}
         <div className=" flex items-center justify-center md:flex md:w-1/2">
-          <form className="ml-14 md:ml-0 md:w-3/4 max-w-md rounded p-8 shadow-md">
+          <form className="ml-14 max-w-md rounded p-8 shadow-md md:ml-0 md:w-3/4">
             <h2 className="mb-6 text-center text-2xl font-bold">Sign In</h2>
             <div className="mb-4">
               <label
