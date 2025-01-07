@@ -106,7 +106,7 @@ const CartPage: React.FC = () => {
                       <td className="px-6 py-4">
                         <div className="flex items-center text-gray-950">
                           <button
-                            className="me-3 inline-flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 bg-white p-1 text-sm font-medium text-gray-500 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+                            className="me-3 inline-flex size-6 items-center justify-center rounded-full border border-gray-300 bg-white p-1 text-sm font-medium text-gray-500 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
                             type="button"
                             onClick={() => handleDecrement(item.id)}
                           >
@@ -139,13 +139,13 @@ const CartPage: React.FC = () => {
                             className="block w-8 rounded-lg border border-gray-300 bg-gray-50 px-2.5 py-1 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500"
                           />
                           <button
-                            className="ms-3 inline-flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 bg-white p-1 text-sm font-medium text-gray-500 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400"
+                            className="ms-3 inline-flex size-6 items-center justify-center rounded-full border border-gray-300 bg-white p-1 text-sm font-medium text-gray-500 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400"
                             type="button"
                             onClick={() => handleIncrement(item.id)}
                           >
                             <span className="sr-only">Increase quantity</span>
                             <svg
-                              className="h-3 w-3"
+                              className="size-3"
                               aria-hidden="true"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"

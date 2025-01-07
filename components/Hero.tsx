@@ -56,13 +56,13 @@ export default function Hero() {
               <input
                 type="email"
                 id="default-email"
-                className="dark:placeholder:gray-400 block w-full rounded-lg border border-gray-300 bg-white p-4 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                className="dark:placeholder:text-gray-400 block w-full rounded-lg border border-gray-300 bg-white p-4 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:focus:border-blue-500 dark:focus:ring-blue-500"
                 placeholder="Enter your email here..."
                 required
               />
               <button
                 type="submit"
-                className="absolute bottom-2.5 end-2.5 rounded-lg px-4 py-2 text-sm  font-medium bg-blue-700 text-white transition hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="absolute bottom-2.5 end-2.5 rounded-lg px-4 py-2 text-sm font-medium bg-blue-700 text-white transition hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 Sign up
               </button>

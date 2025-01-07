@@ -37,7 +37,7 @@ export default function Home() {
             >
               <span className="sr-only">Open main menu</span>
               <svg
-                className="40-5"
+                className=""
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -111,7 +111,7 @@ export default function Home() {
                 </li>
               </Link>
 
-              <div className="ml-2 flex space-x-3 md:space-x-0 rtl:space-x-reverse md:order-2">
+              <div className="ml-2 flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse ">
                 <RightDrawer />
                 <button
                   type="button"
