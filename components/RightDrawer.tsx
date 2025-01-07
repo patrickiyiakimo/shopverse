@@ -33,7 +33,7 @@ export default function RightDrawer() {
 
       {isOpen && (
         <div
-          className="fixed inset-0 z-40 bg-black bg-opacity-50"
+          className="fixed inset-0 z-40 bg-black/50"
           onClick={toggleDrawer}
         ></div>
       )}
