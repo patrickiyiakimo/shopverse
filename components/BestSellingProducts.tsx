@@ -143,7 +143,6 @@ const handleFavouriteClick = (product: Product) => {
                   : "text-red-600"
               }`}
             />
-
             <Image
               src={product.image}
               alt={product.name}
