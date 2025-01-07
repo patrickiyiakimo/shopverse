@@ -126,7 +126,7 @@ const Members: React.FC = () => {
     <div>
       <div className="pt-40 text-center font-mont text-xl font-semibold md:text-2xl lg:text-4xl">
         <h3>We have 50+ Active Dedicated Members for Helping the Customers</h3>
-        <p className="px-20 py-1 text-xl font-normal">
+        <p className="px-20 py-1 text-xl font-normal lg:px-40">
           Globally engage cross-media leadership skills before cross-media
           innovation develop standardised platforms without robust applications.
           Conveniently go forward collaboration and idea-sharing.
