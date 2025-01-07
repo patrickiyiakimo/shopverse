@@ -23,8 +23,7 @@ export default function CartPage() {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              // src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-              src="/images/cosmetic-products-dreamtime-4.webp"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
               alt=""
             />
           </div>
