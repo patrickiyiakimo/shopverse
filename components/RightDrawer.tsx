@@ -47,7 +47,7 @@ export default function RightDrawer() {
         <div className="flex items-center justify-between border-b p-4">
           <h2 className="text-lg font-medium">Favorite Items</h2>
           <button
-            className="text-gray-900 hover:bg-gray-300 hover:bg-rounded-full  dark:text-white"
+            className="text-gray-900 dark:text-white"
             onClick={toggleDrawer}
           >
             ✕
