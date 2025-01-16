@@ -104,6 +104,7 @@ const handleFavouriteClick = (product: Product) => {
     toast.error("Item removed from favourites", {
       position: "top-left",
       autoClose: 5000,
+      theme: "dark",
     });
   } else {
     // Add item to favourites
@@ -112,6 +113,7 @@ const handleFavouriteClick = (product: Product) => {
     toast.success(`${product.name} added to favourites`, {
       position: "top-left",
       autoClose: 5000,
+      theme: "dark",
     });
   }
 };
