@@ -66,6 +66,7 @@ const BestSellingProducts: React.FC = () => {
       toast.error(`${product.name} is already in the cart`, {
         position: "top-right",
         autoClose: 5000,
+        theme: "dark",
       });
     } else {
       const newCartItem: CartItem = {
@@ -81,6 +82,7 @@ const BestSellingProducts: React.FC = () => {
       toast.success(`${product.name} added to cart`, {
         position: "top-right",
         autoClose: 5000,
+        theme: "dark",
       });
     }
   };
