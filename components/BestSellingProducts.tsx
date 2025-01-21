@@ -152,7 +152,7 @@ const handleFavouriteClick = (product: Product) => {
               alt={product.name}
               width={400}
               height={400}
-              className="mb-4 h-auto max-h-60  rounded"
+              className="mb-4 h-auto max-h-60 rounded"
             />
             <h5 className="text-xl font-semibold">{product.name}</h5>
             <p>{product.description}</p>
