@@ -175,7 +175,7 @@ const handleFavouriteClick = (product: Product) => {
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
           disabled={currentPage === 1}
-          className="rounded bg-gray-300 px-4 py-2 text-black hover:bg-gray-400 disabled:cursor-not-allowed disabled:opacity-50"
+          className="rounded bg-gray-300 px-4 py-2 duration-700 text-black hover:bg-gray-400 disabled:cursor-not-allowed disabled:opacity-50"
         >
           Previous
         </button>
