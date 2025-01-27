@@ -112,7 +112,7 @@ export default function CartPage() {
           </div>
         </div>
       </div> */}
-      <section className="mx-5 mt-10 rounded-lg bg-blue-800 px-10 py-10 md:mx-20  md:px-32 md:py-20">
+      <section className="mx-5 mt-10 rounded-lg bg-blue-800 p-10 md:mx-20  md:px-32 md:py-20">
         <div className="">
           <h3 className="mr-10 font-mont text-xl font-bold text-white md:text-2xl lg:text-4xl">
             Perform Market Research to gain Insights into Industry Trends
@@ -131,14 +131,14 @@ export default function CartPage() {
             <span className="mx-1.5 size-1 rounded-full bg-gray-500 dark:bg-gray-400"></span>
             <a
               href="#"
-              className="font-mediu text-sm underline hover:no-underline dark:text-white"
+              className="font-medium text-sm underline hover:no-underline dark:text-white"
             >
               73 reviews
             </a>
           </div>
         </div>
-        <hr className="mb-2 mt-2" />
-        <div className="font-mont lg:flex text-white">
+        <hr className="my-2" />
+        <div className="font-mont text-white lg:flex">
           <span className="flex uppercase">
             <p className="mr-2 text-xl md:text-3xl lg:text-5xl">12K+</p>
             <p className="mr-3 mt-1 text-sm md:text-[15px]">total projects completed</p>

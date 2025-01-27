@@ -77,14 +77,14 @@ const Members: React.FC = () => {
           <h1 className="ml-10 mt-10 font-mont text-2xl font-semibold md:text-3xl lg:ml-20 lg:text-5xl">
             We Provide Creative Solutions
           </h1>
-          <p className="text-normal ml-10 py-1 font-mont font-normal lg:mx-20">
+          <p className="ml-10 py-1 font-mont font-normal lg:mx-20">
             Globally engage cross-media leadership skills before cross-media
             innovation develop standardised platforms without robust
             applications. Conveniently go forward collaboration and
             idea-sharing.
           </p>
           <div className="mt-10 flex flex-col items-center rounded-lg border border-gray-200 bg-white px-10 shadow dark:border-gray-700 dark:bg-gray-800 md:max-w-xl md:flex-row lg:ml-20">
-            <img
+            <Image
               className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
               src="/images/bottles-lotion-dreamtime-5.webp"
               alt="Creative Solutions"

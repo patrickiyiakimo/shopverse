@@ -43,7 +43,6 @@ export default function RightDrawer() {
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-700`}
       >
-
         <div className="flex items-center justify-between border-b p-4">
           <h2 className="text-lg font-medium">Favorite Items</h2>
           <button
@@ -58,10 +57,10 @@ export default function RightDrawer() {
           <div className="p-4">
             <p className="mb-6 text-sm text-gray-900 dark:text-white">
               Boost your shopping experience by taking advantage of our
-              <em>'Add to Favourites' </em> feature! Save your most-loved
-              products for easy access and never miss out on your must-haves.
-              Discover why creating your personalized wishlist is the smartest
-              way to shop!
+              <em>&apos;Add to Favourites&apos; </em> feature! Save your
+              most-loved products for easy access and never miss out on your
+              must-haves. Discover why creating your personalized wishlist is
+              the smartest way to shop!
             </p>
           </div>
           {favourites.length > 0 ? (
@@ -83,7 +82,9 @@ export default function RightDrawer() {
               </div>
             ))
           ) : (
-            <p className="ml-4 text-gray-900 dark:text-white">No favorite items yet.</p>
+            <p className="ml-4 text-gray-900 dark:text-white">
+              No favorite items yet.
+            </p>
           )}
         </div>
       </div>

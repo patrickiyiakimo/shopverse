@@ -56,7 +56,7 @@ export default function page() {
               Sign In
             </button>
             <p className="mt-4 text-center text-sm text-gray-500 dark:text-white">
-              Don't have an account?
+              Don&apos;t have an account?
               <Link href="contact" className="pl-2 text-blue-600">
                 Sign Up
               </Link>
