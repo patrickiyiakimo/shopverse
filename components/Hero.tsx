@@ -5,8 +5,7 @@ export default function Hero() {
     <div className="">
       <section className="flex min-h-screen items-center justify-center bg-white bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] py-28 dark:bg-gray-900 dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
         <div className="relative z-10 mx-auto max-w-screen-xl px-4 py-8 text-center hover:transition lg:py-16">
-          <a
-            href="#"
+          <section
             className="mb-7 inline-flex items-center justify-between rounded-full bg-blue-100 p-1 pe-4 text-sm text-blue-700 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800"
           >
             <span className="me-3 rounded-full bg-blue-600 px-4 py-1.5 text-xs text-white">
@@ -28,7 +27,7 @@ export default function Hero() {
                 d="m1 9 4-4-4-4"
               />
             </svg>
-          </a>
+          </section>
           <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
             Discover Your Style Statement with ShopVerse
           </h1>

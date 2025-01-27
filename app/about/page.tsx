@@ -18,7 +18,7 @@ export default function CartPage() {
           </p>
         </div>
       </section>
-      <div className="ml-5 mr-5  grid grid-cols-2 gap-4 md:mx-20 md:grid-cols-4 lg:mx-20">
+      {/* <div className="ml-5 mr-5  grid grid-cols-2 gap-4 md:mx-20 md:grid-cols-4 lg:mx-20">
         <div className="grid gap-4">
           <div>
             <img
@@ -111,7 +111,7 @@ export default function CartPage() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
       <section className="mx-5 mt-10 rounded-lg bg-blue-800 px-10 py-10 md:mx-20  md:px-32 md:py-20">
         <div className="">
           <h3 className="mr-10 font-mont text-xl font-bold text-white md:text-2xl lg:text-4xl">
