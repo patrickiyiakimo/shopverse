@@ -7,14 +7,15 @@ export default function CartPage() {
       <section className="font-mont dark:bg-gray-900">
         <div className="mx-auto max-w-screen-xl px-4 py-8 text-center lg:py-16">
           <h1 className="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-4xl lg:text-6xl">
-            We’re passionate about more than just selling products.
+            We&apos;re passionate about more than just selling products.
           </h1>
           <p className="mb-8 text-lg font-normal text-gray-900 dark:text-white sm:px-16 lg:px-48 lg:text-xl">
             Our skincare solutions are crafted using the finest natural
             ingredients, free from harmful chemicals, and designed to bring out
-            your best skin ever. Whether you’re battling dryness, sensitivity,
-            or looking to elevate your self-care routine, we’re here to help you
-            feel confident in your own skin every day.
+            your best skin ever. Whether you&apos;re battling dryness,
+            sensitivity, or looking to elevate your self-care routine,
+            we&apos;re here to help you feel confident in your own skin every
+            day.
           </p>
         </div>
       </section>
@@ -37,7 +38,7 @@ export default function CartPage() {
             <span className="mx-1.5 size-1 rounded-full bg-gray-500 dark:bg-gray-400"></span>
             <a
               href="#"
-              className="font-medium text-sm underline hover:no-underline dark:text-white"
+              className="text-sm font-medium underline hover:no-underline dark:text-white"
             >
               73 reviews
             </a>
@@ -47,15 +48,21 @@ export default function CartPage() {
         <div className="font-mont text-white lg:flex">
           <span className="flex uppercase">
             <p className="mr-2 text-xl md:text-3xl lg:text-5xl">12K+</p>
-            <p className="mr-3 mt-1 text-sm md:text-[15px]">total projects completed</p>
+            <p className="mr-3 mt-1 text-sm md:text-[15px]">
+              total projects completed
+            </p>
           </span>
           <span className="flex uppercase">
             <p className="mr-2 text-xl md:text-3xl lg:text-5xl">300K+</p>
-            <p className="mr-3 mt-1 text-sm md:text-[15px]">satisfied active customers</p>
+            <p className="mr-3 mt-1 text-sm md:text-[15px]">
+              satisfied active customers
+            </p>
           </span>
           <span className="flex uppercase">
             <p className="mr-2 text-xl md:text-3xl lg:text-5xl">4.95</p>
-            <p className="mr-3 mt-1 text-sm md:text-[15px]">active clients rating</p>
+            <p className="mr-3 mt-1 text-sm md:text-[15px]">
+              active clients rating
+            </p>
           </span>
         </div>
       </section>

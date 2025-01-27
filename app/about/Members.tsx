@@ -85,6 +85,8 @@ const Members: React.FC = () => {
           </p>
           <div className="mt-10 flex flex-col items-center rounded-lg border border-gray-200 bg-white px-10 shadow dark:border-gray-700 dark:bg-gray-800 md:max-w-xl md:flex-row lg:ml-20">
             <Image
+              width={400}
+              height={400}
               className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
               src="/images/bottles-lotion-dreamtime-5.webp"
               alt="Creative Solutions"

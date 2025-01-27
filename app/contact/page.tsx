@@ -5,9 +5,9 @@ import React from 'react'
 export default function page() {
   return (
     <div className="min-h-screen font-mont">
-      <div className="h-screen mb-96 flex">
+      <div className="mb-96 flex h-screen">
         {/* Left Side: Image */}
-        <div className="hidden mb-20 w-1/2 md:block">
+        <div className="mb-20 hidden w-1/2 md:block">
           <Image
             width={800}
             height={500}

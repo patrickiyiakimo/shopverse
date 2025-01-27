@@ -5,9 +5,7 @@ export default function Hero() {
     <div className="">
       <section className="flex min-h-screen items-center justify-center bg-white bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] py-28 dark:bg-gray-900 dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
         <div className="relative z-10 mx-auto max-w-screen-xl px-4 py-8 text-center hover:transition lg:py-16">
-          <section
-            className="mb-7 inline-flex items-center justify-between rounded-full bg-blue-100 p-1 pe-4 text-sm text-blue-700 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800"
-          >
+          <section className="mb-7 inline-flex items-center justify-between rounded-full bg-blue-100 p-1 pe-4 text-sm text-blue-700 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800">
             <span className="me-3 rounded-full bg-blue-600 px-4 py-1.5 text-xs text-white">
               New
             </span>
@@ -32,7 +30,7 @@ export default function Hero() {
             Discover Your Style Statement with ShopVerse
           </h1>
           <p className="mb-8 text-lg font-normal text-gray-900 dark:text-gray-200 sm:px-16 lg:px-48 lg:text-xl">
-            Explore luxury and sophistication with ShopVerse's exclusive
+            Explore luxury and sophistication with ShopVerse&apos;s exclusive
             fashion-forward collection
           </p>
           <form className="mx-auto w-full max-w-md">
@@ -55,13 +53,13 @@ export default function Hero() {
               <input
                 type="email"
                 id="default-email"
-                className="dark:placeholder:text-gray-400 block w-full rounded-lg border border-gray-300 bg-white p-4 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                className="block w-full rounded-lg border border-gray-300 bg-white p-4 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
                 placeholder="Enter your email here..."
                 required
               />
               <button
                 type="submit"
-                className="absolute bottom-2.5 end-2.5 rounded-lg px-4 py-2 text-sm font-medium bg-blue-700 text-white transition hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="absolute bottom-2.5 end-2.5 rounded-lg bg-blue-700 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 Sign up
               </button>
