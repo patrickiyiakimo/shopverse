@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Page() {
   return (
-    <div className="flex min-h-screen items-center justify-center pt-20 font-mont">
+    <div className="flex min-h-screen items-center justify-center pt-14 font-mont">
       <div className="w-full max-w-xl px-4 md:px-8">
         <form className="rounded bg-white p-6 shadow-md dark:bg-gray-800 sm:p-8">
           <h2 className="mb-6 text-center text-2xl font-bold text-gray-800 dark:text-white">
