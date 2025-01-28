@@ -9,8 +9,6 @@ export default function Page() {
           <h2 className="mb-6 text-center text-2xl font-bold text-gray-800 dark:text-white">
             Sign Up
           </h2>
-
-          {/* Name Field */}
           <div className="mb-4">
             <label
               htmlFor="name"
@@ -26,8 +24,6 @@ export default function Page() {
               placeholder="Enter your name"
             />
           </div>
-
-          {/* Email Field */}
           <div className="mb-4">
             <label
               htmlFor="email"
@@ -43,8 +39,6 @@ export default function Page() {
               placeholder="Enter your email"
             />
           </div>
-
-          {/* Password Field */}
           <div className="mb-4">
             <label
               htmlFor="password"
@@ -60,16 +54,12 @@ export default function Page() {
               placeholder="Enter your password"
             />
           </div>
-
-          {/* Submit Button */}
           <button
             type="submit"
             className="w-full rounded-md bg-blue-700 py-2 text-white transition duration-300 hover:bg-blue-800"
           >
             Sign Up
           </button>
-
-          {/* Log In Link */}
           <p className="mt-4 text-center text-sm text-gray-800 dark:text-white">
             Already have an account?
             <Link href="/login" className="pl-2 text-blue-600 hover:underline">
