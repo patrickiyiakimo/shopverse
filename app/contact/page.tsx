@@ -19,7 +19,7 @@ export default function page() {
 
         {/* Right Side: Form */}
         <div className=" flex items-center justify-center md:flex md:w-1/2">
-          <form className="ml-14 max-w-md rounded p-8 shadow-md md:ml-0 md:w-3/4">
+          <form className="ml-14 max-w-md rounded p-8 md:ml-0 md:w-3/4">
             <h2 className="mb-6 text-center text-2xl font-bold">Sign Up</h2>
             <div className="mb-4">
               <label
