@@ -62,7 +62,7 @@ export default function Page() {
           </button>
           <p className="mt-4 text-center text-sm text-gray-800 dark:text-white">
             Already have an account?
-            <Link href="login" className="pl-2 text-blue-600 hover:underline">
+            <Link href="/login" className="pl-2 text-blue-600 hover:underline">
               Log in
             </Link>
           </p>
