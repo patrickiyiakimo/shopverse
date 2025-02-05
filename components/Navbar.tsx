@@ -30,31 +30,15 @@ export default function Home() {
           </Link>
           <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
             <Drawer />
-          </div>
-          <button
-            type="button"
-            onClick={toggleMenu}
-            className="inline-flex size-10 items-center justify-center rounded-lg border-2 border-blue-600 p-2 text-sm text-blue-600 focus:outline-none focus:ring-2 dark:text-blue-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
-            aria-expanded={isMenuOpen}
-          >
-            <IoMenu className="text-6xl"/>
-            {/* <span className="sr-only">Open main menu</span>
-            <svg
-              className="text-blue-600"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
+            <button
+              type="button"
+              onClick={toggleMenu}
+              className="inline-flex size-10 items-center justify-center rounded-lg border-2 border-blue-600 p-2 text-sm text-blue-600 focus:outline-none focus:ring-2 dark:text-blue-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+              aria-expanded={isMenuOpen}
             >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg> */}
-          </button>
+              <IoMenu className="text-6xl" />
+            </button>
+          </div>
 
           {/* Mobile menu */}
           <div
