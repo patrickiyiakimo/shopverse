@@ -38,7 +38,7 @@ export default function Home() {
               <span className="sr-only">Open main menu</span>
               <svg
                 className="text-blue-600"
-                // aria-hidden="true"
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 17 14"
