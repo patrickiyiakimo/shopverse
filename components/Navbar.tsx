@@ -7,6 +7,7 @@ import Drawer from "./Drawer";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import RightDrawer from "./RightDrawer";
+import { IoMenu } from "react-icons/io5";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,7 +37,8 @@ export default function Home() {
             className="inline-flex size-10 items-center justify-center rounded-lg border-2 border-blue-600 p-2 text-sm text-blue-600 focus:outline-none focus:ring-2 dark:text-blue-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
             aria-expanded={isMenuOpen}
           >
-            <span className="sr-only">Open main menu</span>
+            <IoMenu className="text-6xl"/>
+            {/* <span className="sr-only">Open main menu</span>
             <svg
               className="text-blue-600"
               aria-hidden="true"
@@ -51,7 +53,7 @@ export default function Home() {
                 strokeWidth="2"
                 d="M1 1h15M1 7h15M1 13h15"
               />
-            </svg>
+            </svg> */}
           </button>
 
           {/* Mobile menu */}
