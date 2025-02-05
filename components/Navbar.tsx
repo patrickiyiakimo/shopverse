@@ -66,7 +66,7 @@ export default function Home() {
                 <li
                   className={`mt-3 block rounded px-3 py-2 ${
                     isActive("/")
-                      ? "bg-blue-700 text-white"
+                      ? "bg-blue-700 text-white lg:text-blue-600 lg:bg-auto"
                       : "text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
                   } md:bg-transparent md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500`}
                   aria-current={isActive("/") ? "page" : undefined}
