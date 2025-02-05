@@ -32,13 +32,13 @@ export default function Home() {
             <button
               type="button"
               onClick={toggleMenu}
-              className="inline-flex size-10 items-center border-2 border-blue-600 justify-center rounded-lg p-2 text-sm text-blue-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-blue-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+              className="inline-flex size-10 items-center justify-center rounded-lg border-2 p-2 text-sm focus:outline-none focus:ring-2 dark:text-blue-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
               aria-expanded={isMenuOpen}
             >
               <span className="sr-only">Open main menu</span>
               <svg
                 className="text-blue-600"
-                aria-hidden="true"
+                // aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 17 14"
@@ -66,7 +66,7 @@ export default function Home() {
                 <li
                   className={`mt-3 block rounded px-3 py-2 ${
                     isActive("/")
-                      ? "bg-blue-700 text-white lg:text-blue-600 lg:bg-auto"
+                      ? "bg-blue-700 text-white lg:bg-auto lg:text-blue-600"
                       : "text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
                   } md:bg-transparent md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500`}
                   aria-current={isActive("/") ? "page" : undefined}
@@ -79,7 +79,7 @@ export default function Home() {
                 <li
                   className={`mt-3 block rounded px-3 py-2 ${
                     isActive("/about")
-                      ? "bg-blue-700 text-blue-700"
+                      ? "bg-blue-700 text-white lg:bg-auto lg:text-blue-600"
                       : "text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
                   } md:bg-transparent md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500`}
                 >
@@ -91,7 +91,7 @@ export default function Home() {
                 <li
                   className={`mt-3 block rounded px-3 py-2 ${
                     isActive("/cart")
-                      ? "bg-blue-700 text-blue-700"
+                      ? "bg-blue-700 text-white lg:bg-auto lg:text-blue-600"
                       : "text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
                   } md:bg-transparent md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500`}
                 >
@@ -103,7 +103,7 @@ export default function Home() {
                 <li
                   className={`mt-3 block rounded px-3 py-2 ${
                     isActive("/contact")
-                      ? "bg-blue-700 text-blue-700"
+                      ? "bg-blue-700 text-white lg:bg-auto lg:text-blue-600"
                       : "text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
                   } md:bg-transparent md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500`}
                 >
