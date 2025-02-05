@@ -32,12 +32,12 @@ export default function Home() {
             <button
               type="button"
               onClick={toggleMenu}
-              className="inline-flex size-10 items-center justify-center rounded-lg p-2 text-sm text-blue-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-blue-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+              className="inline-flex size-10 items-center border-2 border-blue-600 justify-center rounded-lg p-2 text-sm text-blue-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-blue-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
               aria-expanded={isMenuOpen}
             >
               <span className="sr-only">Open main menu</span>
               <svg
-                className=""
+                className="text-blue-600"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
