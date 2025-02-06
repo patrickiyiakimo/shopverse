@@ -33,7 +33,7 @@ export default function Home() {
             <button
               type="button"
               onClick={toggleMenu}
-              className="inline-flex size-10 items-center justify-center rounded-lg border-2 border-blue-600 p-2 text-sm bg-blue-600 text-white focus:outline-none focus:ring-2 dark:text-blue-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+              className="inline-flex size-10 items-center justify-center rounded-lg border-2 border-blue-600 p-2 text-sm text-blue-600 focus:outline-none focus:ring-2 dark:text-blue-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
               aria-expanded={isMenuOpen}
             >
               <IoMenu className="text-6xl" />
