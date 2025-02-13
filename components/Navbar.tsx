@@ -24,9 +24,9 @@ export default function Home() {
       <nav className="fixed start-0 top-0 z-20 w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
           <Link href="/">
-            <em className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
+            <p className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
               ShopVerse
-            </em>
+            </p>
           </Link>
           <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
             <Drawer />
