@@ -164,7 +164,7 @@ const handleFavouriteClick = (product: Product) => {
                 onClick={() => handleCartClick(product)}
                 className="rounded bg-blue-700 px-5 py-2 text-white transition hover:bg-blue-800"
               >
-                Add to cart
+                Add item
               </button>
             </div>
           </div>
