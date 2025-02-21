@@ -139,13 +139,15 @@ const handleFavouriteClick = (product: Product) => {
             key={product.id}
             className="relative rounded border p-4 dark:border-gray-600"
           >
-            <div className="bg-blue-600 absolute rounded-b-full size-12 flex items-center justify-center font-bold">
+            <div
+              onClick={() => handleFavouriteClick(product)}
+              className="absolute flex size-12 items-center justify-center rounded-b-full bg-blue-600 font-bold hover:cursor-pointer"
+            >
               <FaHeart
-                onClick={() => handleFavouriteClick(product)}
-                className={`absolute size-6 hover:cursor-pointer ${
+                className={`absolute size-6 ${
                   favourites.includes(product.id)
                     ? "text-green-600"
-                    : "text-white hover:text-red-500 duration-700"
+                    : "text-white duration-700 hover:text-red-500"
                 }`}
               />
             </div>
