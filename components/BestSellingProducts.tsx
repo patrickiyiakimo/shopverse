@@ -139,9 +139,12 @@ const handleFavouriteClick = (product: Product) => {
             key={product.id}
             className="relative rounded border p-4 dark:border-gray-600"
           >
+            <div>
+              
+            </div>
             <FaHeart
               onClick={() => handleFavouriteClick(product)}
-              className={`absolute ml-5 mt-5 size-5 hover:cursor-pointer ${
+              className={`absolute ml-5 mt-5 size-7 hover:cursor-pointer ${
                 favourites.includes(product.id)
                   ? "text-green-600"
                   : "text-red-600"
@@ -168,7 +171,7 @@ const handleFavouriteClick = (product: Product) => {
                 Add to cart
               </button>
             </div>
-          </div>
+          </div?>
         ))}
       </div>
 
