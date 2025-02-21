@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { FaHeart } from "react-icons/fa";
 import Image from "next/image";
+import { FaCartShopping } from "react-icons/fa6";
 
 interface Product {
   id: number;
@@ -138,7 +139,6 @@ const handleFavouriteClick = (product: Product) => {
             key={product.id}
             className="relative rounded border p-4 dark:border-gray-600"
           >
-
             <FaHeart
               onClick={() => handleFavouriteClick(product)}
               className={`absolute ml-5 mt-5 size-5 hover:cursor-pointer ${
@@ -162,8 +162,9 @@ const handleFavouriteClick = (product: Product) => {
               </span>
               <button
                 onClick={() => handleCartClick(product)}
-                className="rounded bg-blue-700 px-5 py-2 text-white transition hover:bg-blue-800"
+                className="rounded flex items-center bg-blue-700 px-5 py-2 text-white transition hover:bg-blue-800"
               >
+                <FaCartShopping className="mr-3"/>
                 Add to cart
               </button>
             </div>
@@ -175,7 +176,8 @@ const handleFavouriteClick = (product: Product) => {
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
           disabled={currentPage === 1}
-         className="rounded bg-gray-300 px-4 py-2 text-black duration-700 hover:bg-gray-400 disabled:cursor-not-allowed disabled:opacity-50">
+          className="rounded bg-gray-300 px-4 py-2 text-black duration-700 hover:bg-gray-400 disabled:cursor-not-allowed disabled:opacity-50"
+        >
           Previous
         </button>
         <span className="flex items-center px-4 py-2 font-bold">
