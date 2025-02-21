@@ -139,17 +139,17 @@ const handleFavouriteClick = (product: Product) => {
             key={product.id}
             className="relative rounded border p-4 dark:border-gray-600"
           >
-            <div>
-              
+            <div className="bg-blue-600 absolute  w-10 h-10 flex items-center justify-center text-white font-bold">
+              <FaHeart
+                onClick={() => handleFavouriteClick(product)}
+                className={`absolute size-7 hover:cursor-pointer ${
+                  favourites.includes(product.id)
+                    ? "text-green-600"
+                    : "text-red-600"
+                }`}
+              />
             </div>
-            <FaHeart
-              onClick={() => handleFavouriteClick(product)}
-              className={`absolute ml-5 mt-5 size-7 hover:cursor-pointer ${
-                favourites.includes(product.id)
-                  ? "text-green-600"
-                  : "text-red-600"
-              }`}
-            />
+
             <Image
               src={product.image}
               alt={product.name}
@@ -165,13 +165,13 @@ const handleFavouriteClick = (product: Product) => {
               </span>
               <button
                 onClick={() => handleCartClick(product)}
-                className="rounded flex items-center bg-blue-700 px-5 py-2 text-white transition hover:bg-blue-800"
+                className="flex items-center rounded bg-blue-700 px-5 py-2 text-white transition hover:bg-blue-800"
               >
-                <FaCartShopping className="mr-3"/>
+                <FaCartShopping className="mr-3" />
                 Add to cart
               </button>
             </div>
-          </div?>
+          </div>
         ))}
       </div>
 
