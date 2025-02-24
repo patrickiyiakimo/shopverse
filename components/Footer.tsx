@@ -1,9 +1,9 @@
-import React from 'react'
+import { DarkThemeToggle } from "flowbite-react";
+import React from "react";
 import { FaFacebook } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
-
 
 export default function Footer() {
   return (
@@ -150,6 +150,10 @@ export default function Footer() {
                 <FaGithub />
                 <span className="sr-only hover:transition">GitHub account</span>
               </a>
+              <div className="text-gray-400 hover:text-gray-900 dark:hover:text-white ">
+                <DarkThemeToggle />
+                <span className="sr-only hover:transition">Dark mode</span>
+              </div>
             </div>
           </div>
         </div>
