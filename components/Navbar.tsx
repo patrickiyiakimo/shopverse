@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { DarkThemeToggle } from "flowbite-react";
 import { IoCart } from "react-icons/io5";
 import Drawer from "./Drawer";
 import Link from "next/link";
@@ -94,10 +93,6 @@ export default function Home() {
                   aria-expanded={isMenuOpen}
                 ></button>
               </div>
-
-              <li>
-                <DarkThemeToggle />
-              </li>
             </ul>
           </div>
         </div>
