@@ -119,7 +119,9 @@ export default function Footer() {
             <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
               © 2024 <a href="/">ShopVerse™</a>. All Rights Reserved.
             </span>
-            <div className="mt-4 flex space-x-5 sm:justify-center md:mt-0 rtl:space-x-reverse">
+            <div className="mt-4 flex items-center space-x-5 sm:justify-center md:mt-0 rtl:space-x-reverse">
+                <DarkThemeToggle className="text-gray-400 hover:text-gray-900 dark:hover:text-white" />
+                <span className="sr-only hover:transition">Dark mode</span>
               <a
                 href="#"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
@@ -150,10 +152,6 @@ export default function Footer() {
                 <FaGithub />
                 <span className="sr-only hover:transition">GitHub account</span>
               </a>
-              <div className="text-gray-400 hover:text-gray-900 dark:hover:text-white ">
-                <DarkThemeToggle />
-                <span className="sr-only hover:transition">Dark mode</span>
-              </div>
             </div>
           </div>
         </div>
