@@ -183,7 +183,7 @@ const CartPage: React.FC = () => {
           ))
         ) : (
           <p className="flex items-center justify-center text-center text-2xl font-semibold md:text-4xl lg:text-6xl">
-            No item in your cart.{" "}
+            No item in your cart.
             <IoCart className="ml-20 size-20 md:ml-40 lg:size-72" />
           </p>
         )}
@@ -195,7 +195,7 @@ const CartPage: React.FC = () => {
               {cart.reduce((total, item) => total + item.quantity, 0)}
             </p>
             <p>Total Price: ${totalPrice.toFixed(2)}</p>
-            <Link href="checkout">
+            <Link href="/cart/checkout">
               <button className="mt-2 rounded-lg bg-blue-700 p-3 text-white transition duration-300 hover:bg-blue-800">
                 Proceed Checkout
               </button>
