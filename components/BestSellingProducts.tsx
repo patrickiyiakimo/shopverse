@@ -147,7 +147,7 @@ const handleFavouriteClick = (product: Product) => {
                 className={`absolute size-6 ${
                   favourites.includes(product.id)
                     ? "text-green-600"
-                    : "text-white duration-700 hover:text-gray-300"
+                    : "text-white duration-700 hover:text-green-300"
                 }`}
               />
             </div>
