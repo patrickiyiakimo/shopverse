@@ -95,8 +95,8 @@ const CartPage: React.FC = () => {
                         <Image
                           src={item.image}
                           alt={item.name}
-                          width={100}
-                          height={100}
+                          width={60}
+                          height={60}
                           className="size-10 max-h-full max-w-full rounded-full md:size-32 md:w-32 lg:size-10"
                         />
                       </td>
