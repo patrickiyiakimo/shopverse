@@ -92,13 +92,13 @@ const CartPage: React.FC = () => {
                   <tbody>
                     <tr className="border-b bg-white hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
                       <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                        {/* <Image
+                        <Image
                           src={item.image}
                           alt={item.name}
                           width={60}
                           height={60}
                           className="size-10 max-h-full max-w-full rounded-full md:size-32 md:w-32 lg:size-10"
-                        /> */}
+                        />
                       </td>
                       <td className="px-6 py-4 text-gray-900 dark:text-white">
                         {item.name}
