@@ -201,4 +201,5 @@ const handleFavouriteClick = (product: Product) => {
     </div>
   );
 };
+
 export default BestSellingProducts;
