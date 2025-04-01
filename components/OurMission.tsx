@@ -6,7 +6,7 @@ const OurMission = ({ mission }) => {
       {mission.map((item, index) => (
         <div key={index}>
           <h2>{item.title}</h2>
-          <p>{item.body}</p>
+          {/* <p>{item.body}</p> */}
         </div>
       ))}
     </div>
