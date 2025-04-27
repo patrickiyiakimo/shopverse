@@ -56,11 +56,11 @@ export default function RightDrawer() {
         <div className="max-h-[calc(100vh-100px)] overflow-y-auto p-4">
           <div className="p-4">
             <p className="mb-6 text-sm text-gray-900 dark:text-white">
-              {/* Boost your shopping experience by taking advantage of our
+              Boost your shopping experience by taking advantage of our
               <em>&apos;Add to Favourites&apos; </em> feature! Save your
               most-loved products for easy access and never miss out on your
               must-haves. Discover why creating your personalized wishlist is
-              the smartest way to shop! */}
+              the smartest way to shop!
             </p>
           </div>
           {favourites.length > 0 ? (
