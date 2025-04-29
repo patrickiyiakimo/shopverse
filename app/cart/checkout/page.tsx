@@ -55,7 +55,7 @@ function PaymentMethod() {
 function OrderSummary() {
   return (
     <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-      <h3 className="text-lg font-medium mb-4">Order Summary</h3>
+      <h3 className="text-lg font-medium mb-4 text-gray-800">Order Summary</h3>
       <div className="space-y-2 text-sm text-gray-700">
         <div className="flex justify-between">
           <span>Product 1</span>
