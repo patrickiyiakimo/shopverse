@@ -168,7 +168,7 @@ const handleFavouriteClick = (product: Product) => {
               </span>
               <button
                 onClick={() => handleCartClick(product)}
-                className="flex items-center rounded bg-blue-700 px-5 py-2 text-white transition hover:bg-blue-800"
+                className="flex items-center rounded bg-blue-700 px-5 py-2 text-white transition hover:bg-blue-800 duration-300"
               >
                 <FaCartShopping className="mr-3" />
                 Add to cart
