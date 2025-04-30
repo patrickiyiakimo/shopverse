@@ -1,7 +1,7 @@
 export default function CheckoutPage() {
   return (
     <div className="min-h-screen bg-gray-100 px-4 pt-32 pb-10 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto bg-white shadow-md rounded-lg overflow-hidden grid md:grid-cols-3 gap-6 p-6 sm:p-8">
+      <div className="max-w-6xl mx-auto bg-white shadow-md rounded-lg grid gap-6 p-6 sm:p-8">
         <div className="md:col-span-2 space-y-6">
           <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800">Checkout</h2>
           <CheckoutForm />
