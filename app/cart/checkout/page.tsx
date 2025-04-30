@@ -41,7 +41,7 @@ function PaymentMethod() {
           <input type="text" placeholder="Expiry Date (MM/YY)" className="input w-full" />
           <input type="text" placeholder="CVC" className="input w-full" />
         </div>
-        <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-md font-medium">
+        <button type="submit" className="w-full bg-blue-700 hover:bg-blue-800 duration-500 text-white py-3 rounded-md font-medium">
           Pay Now
         </button>
       </form>
