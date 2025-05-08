@@ -147,7 +147,7 @@ const BestSellingProducts: React.FC = () => {
                 <FaHeart
                   className={`absolute size-6 ${
                     favourites.includes(product.id)
-                      ? "text-green-600"
+                      ? "text-red-600"
                       : "text-white duration-700 hover:text-green-300"
                   }`}
                 />
