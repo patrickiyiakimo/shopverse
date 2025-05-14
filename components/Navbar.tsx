@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { IoCart } from "react-icons/io5";
-import Drawer from "./Drawer";
 import Link from "next/link";
+import Drawer from "./Drawer";
 import { usePathname } from "next/navigation";
 import RightDrawer from "./RightDrawer";
 import { IoMenu } from "react-icons/io5";
