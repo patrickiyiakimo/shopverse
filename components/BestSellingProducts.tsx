@@ -152,15 +152,19 @@ const BestSellingProducts: React.FC = () => {
                   }`}
                 />
               </div>
+              <Link href={`/products/${product.id}`}>
+                <div className="cursor-pointer">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    width={400}
+                    height={400}
+                    layout="responsive"
+                    className="mb-4 h-auto max-h-60 w-full max-w-full rounded object-cover"
+                  />
+                </div>
+              </Link>
 
-              <Image
-                src={product.image}
-                alt={product.name}
-                width={400}
-                height={400}
-                layout="responsive"
-                className="mb-4 h-auto max-h-60 w-full max-w-full rounded object-cover"
-              />
               <h5 className="text-xl font-semibold">{product.name}</h5>
               <p>{product.description}</p>
               <div className="flex items-center justify-between">
