@@ -137,7 +137,7 @@ const BestSellingProducts: React.FC = () => {
         <div className="grid w-full grid-cols-1 gap-4 rounded-lg border-gray-200 bg-white shadow dark:bg-gray-900 md:grid-cols-2 lg:grid-cols-3">
           {currentProducts.map((product) => (
             <div
-              key={product.id}
+              key={product.name}
               className="relative rounded border p-4 dark:border-gray-600"
             >
               <div
@@ -152,8 +152,8 @@ const BestSellingProducts: React.FC = () => {
                   }`}
                 />
               </div>
-              <Link href={`/products/${product.id}`}>
-                <div className="cursor-pointer">
+              <Link href={`/products/${product.id}`} className="cursor-pointer">
+                <div>
                   <Image
                     src={product.image}
                     alt={product.name}
@@ -163,7 +163,6 @@ const BestSellingProducts: React.FC = () => {
                     className="mb-4 h-auto max-h-60 w-full max-w-full rounded object-cover"
                   />
                 </div>
-              </Link>
 
               <h5 className="text-xl font-semibold">{product.name}</h5>
               <p>{product.description}</p>
@@ -179,6 +178,7 @@ const BestSellingProducts: React.FC = () => {
                   Add to cart
                 </button>
               </div>
+              </Link>
             </div>
           ))}
         </div>
